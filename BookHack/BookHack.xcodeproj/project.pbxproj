@@ -46,6 +46,7 @@
 		5399931726063C7500DD5D29 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931626063C7500DD5D29 /* CatalogViewController.swift */; };
 		5399931C26063CA700DD5D29 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931B26063CA700DD5D29 /* CatalogViewModel.swift */; };
 		5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399932126063E2B00DD5D29 /* AppTabBarController.swift */; };
+		5399932A2606412300DD5D29 /* GiveTakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539993292606412300DD5D29 /* GiveTakeButton.swift */; };
 		53E74FF02606391500F76D03 /* UserFlowCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */; };
 		53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */; };
 		53E74FFA2606396500F76D03 /* UserViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FF92606396500F76D03 /* UserViewBuilder.swift */; };
@@ -121,6 +122,7 @@
 		5399931626063C7500DD5D29 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		5399931B26063CA700DD5D29 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		5399932126063E2B00DD5D29 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		539993292606412300DD5D29 /* GiveTakeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveTakeButton.swift; sourceTree = "<group>"; };
 		53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
 		53E74FF92606396500F76D03 /* UserViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewBuilder.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				53668F31260618B1002C9B5E /* AppTexts.swift */,
 				53668EFF26061474002C9B5E /* LoaderIndicator.swift */,
 				53668EFA2606143B002C9B5E /* LoadingIndicatorController.swift */,
+				539993292606412300DD5D29 /* GiveTakeButton.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
 				53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */,
 				53668F0026061474002C9B5E /* LoaderIndicator.swift in Sources */,
+				5399932A2606412300DD5D29 /* GiveTakeButton.swift in Sources */,
 				53668F452606199C002C9B5E /* UserProfileData.swift in Sources */,
 				53668F252606181E002C9B5E /* BaseEnterViewController.swift in Sources */,
 				53668F1C26061811002C9B5E /* EnterPhoneNumberDelegate.swift in Sources */,
