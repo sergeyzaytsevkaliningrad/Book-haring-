@@ -15,24 +15,31 @@ final class MainCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     private let viewBuilder: ViewBuilderProtocol
+    private let authBuilder: AuthViewBuilderProtocol
     
     private let window: UIWindow
     
     init(
         navigationController: UINavigationController,
         viewBuilder: ViewBuilderProtocol,
-        window: UIWindow
+        window: UIWindow,
+        authBuilder: AuthViewBuilderProtocol
     ) {
         self.navigationController = navigationController
         self.viewBuilder = viewBuilder
         self.window = window
+        self.authBuilder = authBuilder
     }
     
     func start() {
-        let controller = viewBuilder.makeAuthViewController(coordinator: self)
-        navigationController.pushViewController(controller, animated: true)
-        window.rootViewController = navigationController
+        startAuthFlow()
     }
     
+    private func startAuthFlow() {
+        let coordinator = AuthCoordinator(navigationController: navigationController, builder: authBuilder, window: window)
+        coordinator.parentCoordinator = self
+        childCoordinators.append(coordinator)
+        coordinator.start()
+    }
     
 }

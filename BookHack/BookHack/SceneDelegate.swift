@@ -18,10 +18,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
             
+            let authService = AuthService()
+            let innerNetworkService = InnerNetworkService()
+            
+            let authBuilder = AuthViewBuilder(
+                authService: authService,
+                networkService: innerNetworkService
+            )
+            
             let mainCoordinator = MainCoordinator(
                 navigationController: UINavigationController(),
                 viewBuilder: ViewBuilder(),
-                window: window
+                window: window,
+                authBuilder: authBuilder
             )
             mainCoordinator.start()
             window.makeKeyAndVisible()

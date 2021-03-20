@@ -19,6 +19,30 @@
 		53668EFB2606143B002C9B5E /* LoadingIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668EFA2606143B002C9B5E /* LoadingIndicatorController.swift */; };
 		53668F0026061474002C9B5E /* LoaderIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668EFF26061474002C9B5E /* LoaderIndicator.swift */; };
 		53668F05260614FB002C9B5E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F04260614FB002C9B5E /* MainCoordinator.swift */; };
+		53668F0C26061776002C9B5E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F0926061776002C9B5E /* AuthService.swift */; };
+		53668F0D26061776002C9B5E /* AuthServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F0A26061776002C9B5E /* AuthServiceErrors.swift */; };
+		53668F0E26061776002C9B5E /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F0B26061776002C9B5E /* AuthServiceProtocol.swift */; };
+		53668F1926061811002C9B5E /* EnterNameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F1326061810002C9B5E /* EnterNameDelegate.swift */; };
+		53668F1A26061811002C9B5E /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F1426061810002C9B5E /* NumberVerificationViewController.swift */; };
+		53668F1B26061811002C9B5E /* EnterPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F1526061810002C9B5E /* EnterPhoneNumberViewController.swift */; };
+		53668F1C26061811002C9B5E /* EnterPhoneNumberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F1626061811002C9B5E /* EnterPhoneNumberDelegate.swift */; };
+		53668F1D26061811002C9B5E /* NumberVerificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F1726061811002C9B5E /* NumberVerificationDelegate.swift */; };
+		53668F1E26061811002C9B5E /* EnterNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F1826061811002C9B5E /* EnterNameViewController.swift */; };
+		53668F252606181E002C9B5E /* BaseEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F222606181D002C9B5E /* BaseEnterViewController.swift */; };
+		53668F262606181E002C9B5E /* WelcomeControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F232606181E002C9B5E /* WelcomeControllerDelegate.swift */; };
+		53668F272606181E002C9B5E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F242606181E002C9B5E /* WelcomeViewController.swift */; };
+		53668F2C2606186A002C9B5E /* AuthCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F2B2606186A002C9B5E /* AuthCoordinatorProtocol.swift */; };
+		53668F34260618B1002C9B5E /* AppTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F31260618B1002C9B5E /* AppTexts.swift */; };
+		53668F35260618B1002C9B5E /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F32260618B1002C9B5E /* AppFonts.swift */; };
+		53668F36260618B1002C9B5E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F33260618B1002C9B5E /* AppColors.swift */; };
+		53668F3B2606192A002C9B5E /* SmsCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F3A2606192A002C9B5E /* SmsCodeTextField.swift */; };
+		53668F4026061965002C9B5E /* InnerNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F3F26061965002C9B5E /* InnerNetworkServiceProtocol.swift */; };
+		53668F452606199C002C9B5E /* UserProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F442606199C002C9B5E /* UserProfileData.swift */; };
+		53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F49260619E9002C9B5E /* BorderButton.swift */; };
+		53668F4C260619EA002C9B5E /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F4A260619EA002C9B5E /* FillButton.swift */; };
+		53668F5126061A33002C9B5E /* InnerNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5026061A33002C9B5E /* InnerNetworkService.swift */; };
+		53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5526061B92002C9B5E /* AuthCoordinator.swift */; };
+		53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */; };
 		96945A997E67FEEE8D54692C /* Pods_BookHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67252E811C7850D4C9416E97 /* Pods_BookHack.framework */; };
 		F2671C6931B8BB66AA95100A /* Pods_BookHack_BookHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D273B6AAB89D4AD35A45E41 /* Pods_BookHack_BookHackUITests.framework */; };
 		F3FA981FF79A43683E26A8C5 /* Pods_BookHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */; };
@@ -64,6 +88,30 @@
 		53668EFA2606143B002C9B5E /* LoadingIndicatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorController.swift; sourceTree = "<group>"; };
 		53668EFF26061474002C9B5E /* LoaderIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderIndicator.swift; sourceTree = "<group>"; };
 		53668F04260614FB002C9B5E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		53668F0926061776002C9B5E /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		53668F0A26061776002C9B5E /* AuthServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServiceErrors.swift; sourceTree = "<group>"; };
+		53668F0B26061776002C9B5E /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
+		53668F1326061810002C9B5E /* EnterNameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNameDelegate.swift; sourceTree = "<group>"; };
+		53668F1426061810002C9B5E /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
+		53668F1526061810002C9B5E /* EnterPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		53668F1626061811002C9B5E /* EnterPhoneNumberDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberDelegate.swift; sourceTree = "<group>"; };
+		53668F1726061811002C9B5E /* NumberVerificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberVerificationDelegate.swift; sourceTree = "<group>"; };
+		53668F1826061811002C9B5E /* EnterNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNameViewController.swift; sourceTree = "<group>"; };
+		53668F222606181D002C9B5E /* BaseEnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEnterViewController.swift; sourceTree = "<group>"; };
+		53668F232606181E002C9B5E /* WelcomeControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeControllerDelegate.swift; sourceTree = "<group>"; };
+		53668F242606181E002C9B5E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		53668F2B2606186A002C9B5E /* AuthCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		53668F31260618B1002C9B5E /* AppTexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTexts.swift; sourceTree = "<group>"; };
+		53668F32260618B1002C9B5E /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		53668F33260618B1002C9B5E /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		53668F3A2606192A002C9B5E /* SmsCodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsCodeTextField.swift; sourceTree = "<group>"; };
+		53668F3F26061965002C9B5E /* InnerNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		53668F442606199C002C9B5E /* UserProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileData.swift; sourceTree = "<group>"; };
+		53668F49260619E9002C9B5E /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		53668F4A260619EA002C9B5E /* FillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
+		53668F5026061A33002C9B5E /* InnerNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerNetworkService.swift; sourceTree = "<group>"; };
+		53668F5526061B92002C9B5E /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewBuilder.swift; sourceTree = "<group>"; };
 		55A2338A28712DEE30B76E9E /* Pods-BookHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.release.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.release.xcconfig"; sourceTree = "<group>"; };
 		67252E811C7850D4C9416E97 /* Pods_BookHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D273B6AAB89D4AD35A45E41 /* Pods_BookHack_BookHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHack_BookHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +185,7 @@
 				53668EF926061403002C9B5E /* Network Service */,
 				53668EEC26061325002C9B5E /* Builders */,
 				53668EE6260612C3002C9B5E /* Coordinators */,
-				53668EF8260613CD002C9B5E /* View */,
+				53668EF8260613CD002C9B5E /* Presentation Layer */,
 				53668E8C26060740002C9B5E /* AppDelegate.swift */,
 				53668E8E26060740002C9B5E /* SceneDelegate.swift */,
 				53668E9526060744002C9B5E /* Assets.xcassets */,
@@ -169,6 +217,8 @@
 		53668EE6260612C3002C9B5E /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				53668F5526061B92002C9B5E /* AuthCoordinator.swift */,
+				53668F2B2606186A002C9B5E /* AuthCoordinatorProtocol.swift */,
 				53668EE7260612D6002C9B5E /* CoordinatorProtocol.swift */,
 				53668F04260614FB002C9B5E /* MainCoordinator.swift */,
 			);
@@ -179,24 +229,62 @@
 			isa = PBXGroup;
 			children = (
 				53668EED26061334002C9B5E /* ViewBuilders.swift */,
+				53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */,
 			);
 			path = Builders;
 			sourceTree = "<group>";
 		};
-		53668EF8260613CD002C9B5E /* View */ = {
+		53668EF8260613CD002C9B5E /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
-				53668EFF26061474002C9B5E /* LoaderIndicator.swift */,
-				53668EFA2606143B002C9B5E /* LoadingIndicatorController.swift */,
+				53668F3026061892002C9B5E /* Design */,
+				53668F12260617EF002C9B5E /* Auth Module */,
 			);
-			path = View;
+			path = "Presentation Layer";
 			sourceTree = "<group>";
 		};
 		53668EF926061403002C9B5E /* Network Service */ = {
 			isa = PBXGroup;
 			children = (
+				53668F442606199C002C9B5E /* UserProfileData.swift */,
+				53668F5026061A33002C9B5E /* InnerNetworkService.swift */,
+				53668F3F26061965002C9B5E /* InnerNetworkServiceProtocol.swift */,
+				53668F0926061776002C9B5E /* AuthService.swift */,
+				53668F0A26061776002C9B5E /* AuthServiceErrors.swift */,
+				53668F0B26061776002C9B5E /* AuthServiceProtocol.swift */,
 			);
 			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		53668F12260617EF002C9B5E /* Auth Module */ = {
+			isa = PBXGroup;
+			children = (
+				53668F3A2606192A002C9B5E /* SmsCodeTextField.swift */,
+				53668F222606181D002C9B5E /* BaseEnterViewController.swift */,
+				53668F232606181E002C9B5E /* WelcomeControllerDelegate.swift */,
+				53668F242606181E002C9B5E /* WelcomeViewController.swift */,
+				53668F1326061810002C9B5E /* EnterNameDelegate.swift */,
+				53668F1826061811002C9B5E /* EnterNameViewController.swift */,
+				53668F1626061811002C9B5E /* EnterPhoneNumberDelegate.swift */,
+				53668F1526061810002C9B5E /* EnterPhoneNumberViewController.swift */,
+				53668F1726061811002C9B5E /* NumberVerificationDelegate.swift */,
+				53668F1426061810002C9B5E /* NumberVerificationViewController.swift */,
+			);
+			path = "Auth Module";
+			sourceTree = "<group>";
+		};
+		53668F3026061892002C9B5E /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				53668F49260619E9002C9B5E /* BorderButton.swift */,
+				53668F4A260619EA002C9B5E /* FillButton.swift */,
+				53668F33260618B1002C9B5E /* AppColors.swift */,
+				53668F32260618B1002C9B5E /* AppFonts.swift */,
+				53668F31260618B1002C9B5E /* AppTexts.swift */,
+				53668EFF26061474002C9B5E /* LoaderIndicator.swift */,
+				53668EFA2606143B002C9B5E /* LoadingIndicatorController.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 		B829297BD6951B7F358B4953 /* Pods */ = {
@@ -450,13 +538,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53668F1D26061811002C9B5E /* NumberVerificationDelegate.swift in Sources */,
 				53668EFB2606143B002C9B5E /* LoadingIndicatorController.swift in Sources */,
+				53668F4C260619EA002C9B5E /* FillButton.swift in Sources */,
 				53668F05260614FB002C9B5E /* MainCoordinator.swift in Sources */,
 				53668EEE26061334002C9B5E /* ViewBuilders.swift in Sources */,
+				53668F1B26061811002C9B5E /* EnterPhoneNumberViewController.swift in Sources */,
+				53668F36260618B1002C9B5E /* AppColors.swift in Sources */,
+				53668F4026061965002C9B5E /* InnerNetworkServiceProtocol.swift in Sources */,
+				53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */,
+				53668F262606181E002C9B5E /* WelcomeControllerDelegate.swift in Sources */,
+				53668F0E26061776002C9B5E /* AuthServiceProtocol.swift in Sources */,
+				53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */,
+				53668F1E26061811002C9B5E /* EnterNameViewController.swift in Sources */,
+				53668F1A26061811002C9B5E /* NumberVerificationViewController.swift in Sources */,
+				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
 				53668F0026061474002C9B5E /* LoaderIndicator.swift in Sources */,
+				53668F452606199C002C9B5E /* UserProfileData.swift in Sources */,
+				53668F252606181E002C9B5E /* BaseEnterViewController.swift in Sources */,
+				53668F1C26061811002C9B5E /* EnterPhoneNumberDelegate.swift in Sources */,
+				53668F2C2606186A002C9B5E /* AuthCoordinatorProtocol.swift in Sources */,
 				53668E8D26060740002C9B5E /* AppDelegate.swift in Sources */,
+				53668F34260618B1002C9B5E /* AppTexts.swift in Sources */,
+				53668F3B2606192A002C9B5E /* SmsCodeTextField.swift in Sources */,
+				53668F5126061A33002C9B5E /* InnerNetworkService.swift in Sources */,
 				53668EE8260612D6002C9B5E /* CoordinatorProtocol.swift in Sources */,
+				53668F35260618B1002C9B5E /* AppFonts.swift in Sources */,
+				53668F0D26061776002C9B5E /* AuthServiceErrors.swift in Sources */,
 				53668E8F26060740002C9B5E /* SceneDelegate.swift in Sources */,
+				53668F0C26061776002C9B5E /* AuthService.swift in Sources */,
+				53668F1926061811002C9B5E /* EnterNameDelegate.swift in Sources */,
+				53668F272606181E002C9B5E /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
