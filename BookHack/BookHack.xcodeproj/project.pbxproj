@@ -15,6 +15,10 @@
 		53668E9926060744002C9B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53668E9726060744002C9B5E /* LaunchScreen.storyboard */; };
 		53668EA426060745002C9B5E /* BookHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668EA326060745002C9B5E /* BookHackTests.swift */; };
 		53668EAF26060745002C9B5E /* BookHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668EAE26060745002C9B5E /* BookHackUITests.swift */; };
+		53668EC02606087F002C9B5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53668EBF2606087F002C9B5E /* GoogleService-Info.plist */; };
+		96945A997E67FEEE8D54692C /* Pods_BookHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67252E811C7850D4C9416E97 /* Pods_BookHack.framework */; };
+		F2671C6931B8BB66AA95100A /* Pods_BookHack_BookHackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D273B6AAB89D4AD35A45E41 /* Pods_BookHack_BookHackUITests.framework */; };
+		F3FA981FF79A43683E26A8C5 /* Pods_BookHackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.debug.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.debug.xcconfig"; sourceTree = "<group>"; };
+		4BDB7B2408FFD51A2DC4BC63 /* Pods-BookHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHackTests.debug.xcconfig"; path = "Target Support Files/Pods-BookHackTests/Pods-BookHackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C4936870943DDE0A6C0F3A3 /* Pods-BookHack-BookHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack-BookHackUITests.release.xcconfig"; path = "Target Support Files/Pods-BookHack-BookHackUITests/Pods-BookHack-BookHackUITests.release.xcconfig"; sourceTree = "<group>"; };
 		53668E892606073F002C9B5E /* BookHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53668E8C26060740002C9B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53668E8E26060740002C9B5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		53668EAA26060745002C9B5E /* BookHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53668EAE26060745002C9B5E /* BookHackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHackUITests.swift; sourceTree = "<group>"; };
 		53668EB026060745002C9B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53668EBF2606087F002C9B5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55A2338A28712DEE30B76E9E /* Pods-BookHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.release.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.release.xcconfig"; sourceTree = "<group>"; };
+		67252E811C7850D4C9416E97 /* Pods_BookHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D273B6AAB89D4AD35A45E41 /* Pods_BookHack_BookHackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHack_BookHackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E648B7B3E23F2B867A35CE9B /* Pods-BookHack-BookHackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack-BookHackUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookHack-BookHackUITests/Pods-BookHack-BookHackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F31DA9F2D63E442C4D41659B /* Pods-BookHackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHackTests.release.xcconfig"; path = "Target Support Files/Pods-BookHackTests/Pods-BookHackTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96945A997E67FEEE8D54692C /* Pods_BookHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3FA981FF79A43683E26A8C5 /* Pods_BookHackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2671C6931B8BB66AA95100A /* Pods_BookHack_BookHackUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082CD553A687BFA8F747FC16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67252E811C7850D4C9416E97 /* Pods_BookHack.framework */,
+				6D273B6AAB89D4AD35A45E41 /* Pods_BookHack_BookHackUITests.framework */,
+				2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53668E802606073F002C9B5E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +110,8 @@
 				53668EA226060745002C9B5E /* BookHackTests */,
 				53668EAD26060745002C9B5E /* BookHackUITests */,
 				53668E8A2606073F002C9B5E /* Products */,
+				B829297BD6951B7F358B4953 /* Pods */,
+				082CD553A687BFA8F747FC16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +135,7 @@
 				53668E9526060744002C9B5E /* Assets.xcassets */,
 				53668E9726060744002C9B5E /* LaunchScreen.storyboard */,
 				53668E9A26060744002C9B5E /* Info.plist */,
+				53668EBF2606087F002C9B5E /* GoogleService-Info.plist */,
 			);
 			path = BookHack;
 			sourceTree = "<group>";
@@ -128,6 +158,20 @@
 			path = BookHackUITests;
 			sourceTree = "<group>";
 		};
+		B829297BD6951B7F358B4953 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */,
+				55A2338A28712DEE30B76E9E /* Pods-BookHack.release.xcconfig */,
+				E648B7B3E23F2B867A35CE9B /* Pods-BookHack-BookHackUITests.debug.xcconfig */,
+				4C4936870943DDE0A6C0F3A3 /* Pods-BookHack-BookHackUITests.release.xcconfig */,
+				4BDB7B2408FFD51A2DC4BC63 /* Pods-BookHackTests.debug.xcconfig */,
+				F31DA9F2D63E442C4D41659B /* Pods-BookHackTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53668EB326060745002C9B5E /* Build configuration list for PBXNativeTarget "BookHack" */;
 			buildPhases = (
+				D6A462197A705C9C1BD1681E /* [CP] Check Pods Manifest.lock */,
 				53668E852606073F002C9B5E /* Sources */,
 				53668E862606073F002C9B5E /* Frameworks */,
 				53668E872606073F002C9B5E /* Resources */,
+				E9BECB09F1424FC1B220A2A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53668EB626060745002C9B5E /* Build configuration list for PBXNativeTarget "BookHackTests" */;
 			buildPhases = (
+				F2A1A1209B1E776C61359663 /* [CP] Check Pods Manifest.lock */,
 				53668E9B26060745002C9B5E /* Sources */,
 				53668E9C26060745002C9B5E /* Frameworks */,
 				53668E9D26060745002C9B5E /* Resources */,
@@ -170,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53668EB926060745002C9B5E /* Build configuration list for PBXNativeTarget "BookHackUITests" */;
 			buildPhases = (
+				29A15901AB93AF4A4C55CAC5 /* [CP] Check Pods Manifest.lock */,
 				53668EA626060745002C9B5E /* Sources */,
 				53668EA726060745002C9B5E /* Frameworks */,
 				53668EA826060745002C9B5E /* Resources */,
+				0477111DC18F8C52AC25CA90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53668EC02606087F002C9B5E /* GoogleService-Info.plist in Resources */,
 				53668E9926060744002C9B5E /* LaunchScreen.storyboard in Resources */,
 				53668E9626060744002C9B5E /* Assets.xcassets in Resources */,
 				53668E9426060740002C9B5E /* Main.storyboard in Resources */,
@@ -252,6 +302,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0477111DC18F8C52AC25CA90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookHack-BookHackUITests/Pods-BookHack-BookHackUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookHack-BookHackUITests/Pods-BookHack-BookHackUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookHack-BookHackUITests/Pods-BookHack-BookHackUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29A15901AB93AF4A4C55CAC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookHack-BookHackUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6A462197A705C9C1BD1681E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9BECB09F1424FC1B220A2A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookHack/Pods-BookHack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookHack/Pods-BookHack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookHack/Pods-BookHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A1A1209B1E776C61359663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookHackTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53668E852606073F002C9B5E /* Sources */ = {
@@ -433,6 +586,7 @@
 		};
 		53668EB426060745002C9B5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +606,7 @@
 		};
 		53668EB526060745002C9B5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A2338A28712DEE30B76E9E /* Pods-BookHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +626,7 @@
 		};
 		53668EB726060745002C9B5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDB7B2408FFD51A2DC4BC63 /* Pods-BookHackTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +649,7 @@
 		};
 		53668EB826060745002C9B5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31DA9F2D63E442C4D41659B /* Pods-BookHackTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +672,7 @@
 		};
 		53668EBA26060745002C9B5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E648B7B3E23F2B867A35CE9B /* Pods-BookHack-BookHackUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +693,7 @@
 		};
 		53668EBB26060745002C9B5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4936870943DDE0A6C0F3A3 /* Pods-BookHack-BookHackUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
