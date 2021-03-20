@@ -13,7 +13,7 @@ enum AppColors {
     static let cherryColor: UIColor = UIColor(red: 136.0 / 255.0, green: 19.0 / 255.0, blue: 19.0 / 255.0, alpha: 1)
 
     static let systemRed = UIColor.systemRed
-    static let systemPink = UIColor.systemPink
+    static let systemPink = UIColor.systemPurple
     static let white = UIColor.white
     static let systemBlue = UIColor.systemBlue
     
