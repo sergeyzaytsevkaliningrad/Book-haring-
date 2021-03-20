@@ -53,6 +53,11 @@
 		5399931C26063CA700DD5D29 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931B26063CA700DD5D29 /* CatalogViewModel.swift */; };
 		5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399932126063E2B00DD5D29 /* AppTabBarController.swift */; };
 		5399932A2606412300DD5D29 /* GiveTakeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539993292606412300DD5D29 /* GiveTakeButton.swift */; };
+		5399933B26064C7B00DD5D29 /* IsbnNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399933A26064C7B00DD5D29 /* IsbnNetworkServiceProtocol.swift */; };
+		5399934026064CDD00DD5D29 /* IsbnNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399933F26064CDD00DD5D29 /* IsbnNetworkService.swift */; };
+		5399934626064DB800DD5D29 /* IsbnResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399934526064DB800DD5D29 /* IsbnResponseModel.swift */; };
+		5399934C26065A4E00DD5D29 /* IsbnScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399934B26065A4E00DD5D29 /* IsbnScannerViewController.swift */; };
+		5399935426065B0300DD5D29 /* ISBNScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399935326065B0300DD5D29 /* ISBNScannerDelegate.swift */; };
 		53E74FF02606391500F76D03 /* UserFlowCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */; };
 		53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */; };
 		53E74FFA2606396500F76D03 /* UserViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FF92606396500F76D03 /* UserViewBuilder.swift */; };
@@ -135,6 +140,11 @@
 		5399931B26063CA700DD5D29 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		5399932126063E2B00DD5D29 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		539993292606412300DD5D29 /* GiveTakeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveTakeButton.swift; sourceTree = "<group>"; };
+		5399933A26064C7B00DD5D29 /* IsbnNetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		5399933F26064CDD00DD5D29 /* IsbnNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnNetworkService.swift; sourceTree = "<group>"; };
+		5399934526064DB800DD5D29 /* IsbnResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnResponseModel.swift; sourceTree = "<group>"; };
+		5399934B26065A4E00DD5D29 /* IsbnScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnScannerViewController.swift; sourceTree = "<group>"; };
+		5399935326065B0300DD5D29 /* ISBNScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISBNScannerDelegate.swift; sourceTree = "<group>"; };
 		53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
 		53E74FF92606396500F76D03 /* UserViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewBuilder.swift; sourceTree = "<group>"; };
@@ -220,6 +230,7 @@
 		53668E8B26060740002C9B5E /* BookHack */ = {
 			isa = PBXGroup;
 			children = (
+				5399934426064DAB00DD5D29 /* DTO */,
 				53668EF926061403002C9B5E /* Network Service */,
 				53668EEC26061325002C9B5E /* Builders */,
 				53668EE6260612C3002C9B5E /* Coordinators */,
@@ -279,6 +290,7 @@
 		53668EF8260613CD002C9B5E /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				5399934A26065A3F00DD5D29 /* IsbnScanner */,
 				5399932026063E1400DD5D29 /* Tab bar */,
 				5399931526063C6200DD5D29 /* Catalog */,
 				53668F3026061892002C9B5E /* Design */,
@@ -297,6 +309,8 @@
 				53668F0926061776002C9B5E /* AuthService.swift */,
 				53668F0A26061776002C9B5E /* AuthServiceErrors.swift */,
 				53668F0B26061776002C9B5E /* AuthServiceProtocol.swift */,
+				5399933A26064C7B00DD5D29 /* IsbnNetworkServiceProtocol.swift */,
+				5399933F26064CDD00DD5D29 /* IsbnNetworkService.swift */,
 			);
 			path = "Network Service";
 			sourceTree = "<group>";
@@ -348,6 +362,23 @@
 				5399932126063E2B00DD5D29 /* AppTabBarController.swift */,
 			);
 			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		5399934426064DAB00DD5D29 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				5399934526064DB800DD5D29 /* IsbnResponseModel.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		5399934A26065A3F00DD5D29 /* IsbnScanner */ = {
+			isa = PBXGroup;
+			children = (
+				5399934B26065A4E00DD5D29 /* IsbnScannerViewController.swift */,
+				5399935326065B0300DD5D29 /* ISBNScannerDelegate.swift */,
+			);
+			path = IsbnScanner;
 			sourceTree = "<group>";
 		};
 		B829297BD6951B7F358B4953 /* Pods */ = {
@@ -604,10 +635,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5399933B26064C7B00DD5D29 /* IsbnNetworkServiceProtocol.swift in Sources */,
 				5399931726063C7500DD5D29 /* CatalogViewController.swift in Sources */,
+				5399934626064DB800DD5D29 /* IsbnResponseModel.swift in Sources */,
+				5399934C26065A4E00DD5D29 /* IsbnScannerViewController.swift in Sources */,
 				53668F1D26061811002C9B5E /* NumberVerificationDelegate.swift in Sources */,
 				53E74FFA2606396500F76D03 /* UserViewBuilder.swift in Sources */,
 				53668EFB2606143B002C9B5E /* LoadingIndicatorController.swift in Sources */,
+				5399935426065B0300DD5D29 /* ISBNScannerDelegate.swift in Sources */,
 				5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */,
 				53668F4C260619EA002C9B5E /* FillButton.swift in Sources */,
 				53668F05260614FB002C9B5E /* MainCoordinator.swift in Sources */,
@@ -619,6 +654,7 @@
 				53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */,
 				53668F262606181E002C9B5E /* WelcomeControllerDelegate.swift in Sources */,
 				53668F0E26061776002C9B5E /* AuthServiceProtocol.swift in Sources */,
+				5399934026064CDD00DD5D29 /* IsbnNetworkService.swift in Sources */,
 				53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */,
 				53668F1E26061811002C9B5E /* EnterNameViewController.swift in Sources */,
 				53668F1A26061811002C9B5E /* NumberVerificationViewController.swift in Sources */,
@@ -803,7 +839,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3S3TW83623;
+				DEVELOPMENT_TEAM = QJTX6ZW7M3;
 				INFOPLIST_FILE = BookHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -823,7 +859,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3S3TW83623;
+				DEVELOPMENT_TEAM = QJTX6ZW7M3;
 				INFOPLIST_FILE = BookHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

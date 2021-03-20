@@ -26,7 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 networkService: innerNetworkService
             )
             
-            let userBuilder = UserViewBuilder(networkService: innerNetworkService)
+            let ISBNService = IsbnNetworkService()
+            
+            let userBuilder = UserViewBuilder(networkService: innerNetworkService, ISBNService: ISBNService)
             
             let mainCoordinator = MainCoordinator(
                 navigationController: UINavigationController(),

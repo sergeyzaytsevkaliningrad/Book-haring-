@@ -49,6 +49,6 @@ class CatalogViewController: UIViewController {
     }
     
     @objc private func giveTakeButtonTapped() {
-        
+        viewModel.giveTakeButtonHandler()
     }
 }

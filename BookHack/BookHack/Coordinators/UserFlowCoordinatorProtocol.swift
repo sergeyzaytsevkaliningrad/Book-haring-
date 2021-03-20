@@ -8,4 +8,5 @@
 import Foundation
 
 protocol UserFlowCoordinatorProtocol: Coordinator {
+    func showCodeScanner()
 }

@@ -31,5 +31,9 @@ final class UserFlowCoordinator: UserFlowCoordinatorProtocol {
         navigationController.pushViewController(controller, animated: true)
     }
     
+    func showCodeScanner() {
+        let controller = builder.makeScannerCodeController(coordinator: self)
+        presentController(controller: controller, animated: true, style: .fullScreen)
+    }
     
 }

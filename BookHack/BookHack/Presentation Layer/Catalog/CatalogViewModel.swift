@@ -16,4 +16,8 @@ final class CatalogViewModel {
         self.networkService = networkService
         self.coordinator = coordinator
     }
+    
+    func giveTakeButtonHandler() {
+        coordinator.showCodeScanner()
+    }
 }
