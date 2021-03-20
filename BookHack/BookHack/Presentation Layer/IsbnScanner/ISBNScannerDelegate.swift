@@ -26,9 +26,10 @@ final class ISBNScannerDelegate {
         ISBNService.getBookInfo(by: code) { result in
             switch result {
             case .success(let model):
-                break
-//                print(model.items?.first?.volumeInfo?.title)
-//                print(model.items?.first?.volumeInfo?.subtitle)
+                DispatchQueue.main.async {
+                    self.coordinator.showBook(model: model)
+                    print(model)
+                }
             case .failure(let error):
                 print(error)
             }

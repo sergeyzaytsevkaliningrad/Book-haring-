@@ -36,4 +36,9 @@ final class UserFlowCoordinator: UserFlowCoordinatorProtocol {
         presentController(controller: controller, animated: true, style: .fullScreen)
     }
     
+    func showBook(model: IsbnResponseModel) {
+        let controller = builder.makeBookController(model: model, coordinator: self)
+        dismissPresentedController()
+        navigationController.pushViewController(controller, animated: true)
+    }
 }

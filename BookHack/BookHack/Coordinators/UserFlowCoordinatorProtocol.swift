@@ -9,4 +9,5 @@ import Foundation
 
 protocol UserFlowCoordinatorProtocol: Coordinator {
     func showCodeScanner()
+    func showBook(model: IsbnResponseModel)
 }

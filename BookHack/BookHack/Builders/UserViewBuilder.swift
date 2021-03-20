@@ -10,6 +10,7 @@ import UIKit
 protocol UserViewBuilderProtocol {
     func makeBookCatalogController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController
     func makeScannerCodeController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController
+    func makeBookController(model: IsbnResponseModel, coordinator: UserFlowCoordinatorProtocol) -> UIViewController
 }
 
 final class UserViewBuilder: UserViewBuilderProtocol {
@@ -32,6 +33,12 @@ final class UserViewBuilder: UserViewBuilderProtocol {
     func makeScannerCodeController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController {
         let delegate = ISBNScannerDelegate(ISBNService: ISBNService, firebaseService: networkService, coordinator: coordinator)
         let controller = IsbnScannerViewController(scannerDelegate: delegate)
+        return controller
+    }
+    
+    func makeBookController(model: IsbnResponseModel, coordinator: UserFlowCoordinatorProtocol) -> UIViewController {
+        let viewModel = BookViewModel(coordinator: coordinator, networkService: networkService, bookModel: model)
+        let controller = BookViewController(viewModel: viewModel)
         return controller
     }
 }
