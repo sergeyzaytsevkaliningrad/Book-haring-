@@ -35,10 +35,10 @@ final class MainCoordinator: Coordinator {
     }
     
     func start() {
-        self.startAuthFlow()
         if authService.isUserExist() {
             DispatchQueue.main.async {
                 self.startUserFlow()
+                try? self.authService.signOutUser()
             }
         } else {
             DispatchQueue.main.async {
