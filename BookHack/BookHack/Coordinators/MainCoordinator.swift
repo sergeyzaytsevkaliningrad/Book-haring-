@@ -16,6 +16,7 @@ final class MainCoordinator: Coordinator {
     
     private let viewBuilder: ViewBuilderProtocol
     private let authBuilder: AuthViewBuilderProtocol
+    private let userBuilder: UserViewBuilderProtocol
     private let authService: FirebaseAuthServiceProtocol
     
     private let window: UIWindow
@@ -25,6 +26,7 @@ final class MainCoordinator: Coordinator {
         viewBuilder: ViewBuilderProtocol,
         window: UIWindow,
         authBuilder: AuthViewBuilderProtocol,
+        userBuilder: UserViewBuilder,
         authService: FirebaseAuthServiceProtocol
     ) {
         self.navigationController = navigationController
@@ -32,13 +34,13 @@ final class MainCoordinator: Coordinator {
         self.window = window
         self.authBuilder = authBuilder
         self.authService = authService
+        self.userBuilder = userBuilder
     }
     
     func start() {
         if authService.isUserExist() {
             DispatchQueue.main.async {
                 self.startUserFlow()
-                try? self.authService.signOutUser()
             }
         } else {
             DispatchQueue.main.async {
@@ -55,12 +57,39 @@ final class MainCoordinator: Coordinator {
     }
     
     private func startUserFlow() {
-        let controller = UIViewController()
-        controller.view.backgroundColor = .red
-        window.rootViewController = controller
+        let navigationController = UINavigationController()
+        let userCoordinator = UserFlowCoordinator(
+            navigationController: navigationController,
+            builder: userBuilder
+        )
+        
+        let tabBar = AppTabBarController(userFlow: userCoordinator)
+        window.rootViewController =  tabBar
         UIView.transition(with: self.window,
                           duration: 0.6,
                           options: [.transitionFlipFromLeft],
                           animations: nil, completion: nil)
+    }
+    
+    func userAuthDidFinish(_ child: Coordinator) {
+        deleteChild(child)
+        DispatchQueue.main.async {
+            self.startUserFlow()
+        }
+    }
+    
+    func userSignOut(_ child: Coordinator) {
+        guard let _ = try? authService.signOutUser() else { return }
+        deleteChild(child)
+        startAuthFlow()
+    }
+    
+    private func deleteChild(_ child: Coordinator) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
     }
 }

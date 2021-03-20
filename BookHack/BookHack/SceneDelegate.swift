@@ -26,11 +26,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 networkService: innerNetworkService
             )
             
+            let userBuilder = UserViewBuilder(networkService: innerNetworkService)
+            
             let mainCoordinator = MainCoordinator(
                 navigationController: UINavigationController(),
                 viewBuilder: ViewBuilder(),
                 window: window,
                 authBuilder: authBuilder,
+                userBuilder: userBuilder,
                 authService: authService
             )
             mainCoordinator.start()

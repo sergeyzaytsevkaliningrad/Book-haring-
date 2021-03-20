@@ -64,6 +64,6 @@ final class AuthCoordinator: AuthCoordinatorProtocol {
     }
     
     func authCompleted() {
-//        parentCoordinator?.userAuthDidFinish(self)
+        parentCoordinator?.userAuthDidFinish(self)
     }
 }
