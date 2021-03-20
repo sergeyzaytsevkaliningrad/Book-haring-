@@ -13,10 +13,10 @@
 		129389F92606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */; };
 		12938A06260631B500EA3FF3 /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12938A05260631B500EA3FF3 /* Profile.xib */; };
 		12938A1126063C8400EA3FF3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12938A1026063C8400EA3FF3 /* ProfileController.swift */; };
+		12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */; };
 		53668E8D26060740002C9B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668E8C26060740002C9B5E /* AppDelegate.swift */; };
 		53668E8F26060740002C9B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668E8E26060740002C9B5E /* SceneDelegate.swift */; };
 		53668E9626060744002C9B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53668E9526060744002C9B5E /* Assets.xcassets */; };
-		53668E9926060744002C9B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53668E9726060744002C9B5E /* LaunchScreen.storyboard */; };
 		53668EA426060745002C9B5E /* BookHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668EA326060745002C9B5E /* BookHackTests.swift */; };
 		53668EAF26060745002C9B5E /* BookHackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668EAE26060745002C9B5E /* BookHackUITests.swift */; };
 		53668EC02606087F002C9B5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53668EBF2606087F002C9B5E /* GoogleService-Info.plist */; };
@@ -85,6 +85,7 @@
 		129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		12938A05260631B500EA3FF3 /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
 		12938A1026063C8400EA3FF3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.debug.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.debug.xcconfig"; sourceTree = "<group>"; };
 		4BDB7B2408FFD51A2DC4BC63 /* Pods-BookHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHackTests.debug.xcconfig"; path = "Target Support Files/Pods-BookHackTests/Pods-BookHackTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		53668E8C26060740002C9B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53668E8E26060740002C9B5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53668E9526060744002C9B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53668E9826060744002C9B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53668E9A26060744002C9B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53668E9F26060745002C9B5E /* BookHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53668EA326060745002C9B5E /* BookHackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHackTests.swift; sourceTree = "<group>"; };
@@ -227,8 +227,8 @@
 				53668E8C26060740002C9B5E /* AppDelegate.swift */,
 				53668E8E26060740002C9B5E /* SceneDelegate.swift */,
 				53668E9526060744002C9B5E /* Assets.xcassets */,
+				12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */,
 				129389F12606310C00EA3FF3 /* DetailScene.sks */,
-				53668E9726060744002C9B5E /* LaunchScreen.storyboard */,
 				53668E9A26060744002C9B5E /* Info.plist */,
 				53668EBF2606087F002C9B5E /* GoogleService-Info.plist */,
 			);
@@ -474,8 +474,8 @@
 				129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */,
 				12938A06260631B500EA3FF3 /* Profile.xib in Resources */,
 				129389E826062FFF00EA3FF3 /* ARScreen.xib in Resources */,
+				12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */,
 				53668EC02606087F002C9B5E /* GoogleService-Info.plist in Resources */,
-				53668E9926060744002C9B5E /* LaunchScreen.storyboard in Resources */,
 				53668E9626060744002C9B5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,17 +678,6 @@
 			targetProxy = 53668EAB26060745002C9B5E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		53668E9726060744002C9B5E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53668E9826060744002C9B5E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53668EB126060745002C9B5E /* Debug */ = {
