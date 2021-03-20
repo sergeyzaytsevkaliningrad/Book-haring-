@@ -30,7 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 navigationController: UINavigationController(),
                 viewBuilder: ViewBuilder(),
                 window: window,
-                authBuilder: authBuilder
+                authBuilder: authBuilder,
+                authService: authService
             )
             mainCoordinator.start()
             window.makeKeyAndVisible()

@@ -16,6 +16,7 @@ final class MainCoordinator: Coordinator {
     
     private let viewBuilder: ViewBuilderProtocol
     private let authBuilder: AuthViewBuilderProtocol
+    private let authService: FirebaseAuthServiceProtocol
     
     private let window: UIWindow
     
@@ -23,16 +24,27 @@ final class MainCoordinator: Coordinator {
         navigationController: UINavigationController,
         viewBuilder: ViewBuilderProtocol,
         window: UIWindow,
-        authBuilder: AuthViewBuilderProtocol
+        authBuilder: AuthViewBuilderProtocol,
+        authService: FirebaseAuthServiceProtocol
     ) {
         self.navigationController = navigationController
         self.viewBuilder = viewBuilder
         self.window = window
         self.authBuilder = authBuilder
+        self.authService = authService
     }
     
     func start() {
-        startAuthFlow()
+        self.startAuthFlow()
+        if authService.isUserExist() {
+            DispatchQueue.main.async {
+                self.startUserFlow()
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.startAuthFlow()
+            }
+        }
     }
     
     private func startAuthFlow() {
@@ -42,4 +54,13 @@ final class MainCoordinator: Coordinator {
         coordinator.start()
     }
     
+    private func startUserFlow() {
+        let controller = UIViewController()
+        controller.view.backgroundColor = .red
+        window.rootViewController = controller
+        UIView.transition(with: self.window,
+                          duration: 0.6,
+                          options: [.transitionFlipFromLeft],
+                          animations: nil, completion: nil)
+    }
 }

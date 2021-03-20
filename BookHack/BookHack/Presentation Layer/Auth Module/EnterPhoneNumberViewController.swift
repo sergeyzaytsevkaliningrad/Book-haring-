@@ -24,7 +24,7 @@ final class EnterPhoneNumberViewController: BaseEnterViewController {
         textField.withFlag = true
         textField.withDefaultPickerUI = false
         textField.font = AppFonts.phoneNumber
-        textField.textColor = AppColors.white
+        textField.textColor = AppColors.label
         textField.withExamplePlaceholder = true
         textField.borderStyle = .none
         return textField

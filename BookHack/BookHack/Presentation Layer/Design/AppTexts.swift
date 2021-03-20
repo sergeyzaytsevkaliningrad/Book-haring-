@@ -30,9 +30,8 @@ enum AppTexts {
         static let nextButton = "Продолжить"
         
         enum Welcome {
-            static let headerLabel = "Придумать текст"
-            static let firstButtonTitle = "Войти"
-            static let secondButtonTitle = "Регистрация"
+            static let headerLabel = "Чтобы забрать книжку, нужно зарегистрироваться :)"
+            static let firstButtonTitle = "Далее"
         }
         
     }

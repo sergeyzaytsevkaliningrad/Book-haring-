@@ -31,17 +31,10 @@ final class WelcomeViewController: UIViewController {
         return label
     }()
     
-    private let signInButton: BorderButton = {
+    private let nextButton: BorderButton = {
         let button = BorderButton(type: .system)
         button.titleLabel?.font = AppFonts.buttonRegular
         button.setTitle(AppTexts.AuthFlow.Welcome.firstButtonTitle, for: .normal)
-        return button
-    }()
-    
-    private let signUpButton: FillButton = {
-        let button = FillButton(type: .system)
-        button.titleLabel?.font = AppFonts.buttonRegular
-        button.setTitle(AppTexts.AuthFlow.Welcome.secondButtonTitle, for: .normal)
         return button
     }()
     
@@ -69,12 +62,11 @@ final class WelcomeViewController: UIViewController {
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
         
-        signInButton.addTarget(self, action: #selector(signInTapped), for: .touchUpInside)
-        signUpButton.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(signInTapped), for: .touchUpInside)
     }
     
     private func setupLayout() {
-        [backgroundImage, signInButton, signUpButton, headerLabel].forEach { $0.translatesAutoresizingMaskIntoConstraints = false; view.addSubview($0) }
+        [backgroundImage, nextButton, headerLabel].forEach { $0.translatesAutoresizingMaskIntoConstraints = false; view.addSubview($0) }
         
         NSLayoutConstraint.activate([
             backgroundImage.topAnchor.constraint(equalTo: view.topAnchor),
@@ -87,15 +79,10 @@ final class WelcomeViewController: UIViewController {
             headerLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
             
             
-            signInButton.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
-            signInButton.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
-            signInButton.heightAnchor.constraint(equalToConstant: Constants.buttonHeight),
-            
-            signUpButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 10),
-            signUpButton.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
-            signUpButton.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
-            signUpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32),
-            signUpButton.heightAnchor.constraint(equalToConstant: Constants.buttonHeight)
+            nextButton.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            nextButton.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+            nextButton.heightAnchor.constraint(equalToConstant: Constants.buttonHeight),
+            nextButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20)
         ])
     }
     
