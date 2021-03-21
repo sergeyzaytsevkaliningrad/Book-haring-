@@ -11,4 +11,5 @@ protocol UserFlowCoordinatorProtocol: Coordinator {
     func showCodeScanner()
     func showBook(model: BookResponseModel)
     func showProfile()
+    func showAr()
 }

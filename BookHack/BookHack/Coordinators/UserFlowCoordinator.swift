@@ -49,4 +49,9 @@ final class UserFlowCoordinator: UserFlowCoordinatorProtocol {
     func showProfile() {
         navigationController.popViewController(animated: false)
     }
+    
+    func showAr() {
+        let controller = ARViewController.init(nibName: "ARScreen", bundle: nil)
+        presentController(controller: controller, animated: true, style: .popover)
+    }
 }

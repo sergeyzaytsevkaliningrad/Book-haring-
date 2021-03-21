@@ -10,6 +10,17 @@ import SwiftUI
 struct UsersRaiting: View {
     var tutors: [Tutor] = testData
     @State var showGoodRaiting: Bool = false
+    @State var isPresented: Bool = false
+    
+    
+    var lel: some View {
+        Image("Info")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .padding()
+            .background(SwiftUI.Image("Coolerbackground").edgesIgnoringSafeArea(.all))
+    }
+    
     
     var body: some View {
         
@@ -19,10 +30,11 @@ struct UsersRaiting: View {
                 .accentColor(.red)
                 .colorScheme(.dark)
             VStack(alignment: .leading) {
-                Toggle(isOn: $showGoodRaiting) {
-                    Label("Должники", systemImage: "book")
-                        .colorScheme(.dark)
-                        .font(.title2)
+                Button("Инфо") {
+                    isPresented.toggle()
+                }
+                .popover(isPresented: $isPresented) {
+                    lel
                 }
             }
             .padding()
@@ -36,8 +48,6 @@ struct UsersRaiting: View {
                         .foregroundColor(.gray)
                     Text(tutor.points)
                         .foregroundColor(.red)
-                    
-                    
                     
                 }
             }

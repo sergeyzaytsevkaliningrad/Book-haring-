@@ -23,6 +23,10 @@ final class CatalogViewModel: ObservableObject {
         coordinator.showCodeScanner()
     }
     
+    func ARHandler() {
+        coordinator.showAr()
+    }
+    
     func loadBooks() {
         networkService.loadBooks(amount: 10) { [weak self] books in
             DispatchQueue.main.async {
