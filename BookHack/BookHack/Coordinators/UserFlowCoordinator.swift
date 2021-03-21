@@ -31,6 +31,7 @@ final class UserFlowCoordinator: UserFlowCoordinatorProtocol {
             title: "Каталог",
             image: UIImage(systemName: "books.vertical.fill",
                            withConfiguration: UIImage.SymbolConfiguration(weight: .semibold)), tag: 0)
+        controller.title = "Каталог"
         navigationController.pushViewController(controller, animated: true)
     }
     

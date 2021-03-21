@@ -15,6 +15,7 @@ protocol InnerNetworkServiceProtocol {
     func reserveBook(book: BookResponseModel, completion: @escaping (Error?) -> Void)
     func deleteBook(isbn: String, completion: @escaping (Error?) -> Void)
     func loadReservedBooks(completion: @escaping ([BookResponseModel]) -> Void)
+    func loadBooks(amount: Int, completion: @escaping ([BookResponseModel]) -> Void)
 }
 
 struct UserInfoModel: Codable {

@@ -7,7 +7,15 @@
 
 import Foundation
 
-class BookViewModel: ObservableObject {
+protocol BookViewModelProtocol {
+    var author: String { get }
+    var title: String { get }
+    var isbnCode: String { get }
+    var imageUrl: String { get }
+    func handleTakeBook()
+}
+
+class BookViewModel: ObservableObject, BookViewModelProtocol{
     private let coordinator: UserFlowCoordinatorProtocol
     private let networkService: InnerNetworkServiceProtocol
     private let bookModel: BookResponseModel
@@ -32,6 +40,10 @@ class BookViewModel: ObservableObject {
     
     var isbnCode: String {
         bookModel.isbn
+    }
+    
+    var imageUrl: String {
+        bookModel.imageUrl ?? ""
     }
     
     func handleTakeBook() {

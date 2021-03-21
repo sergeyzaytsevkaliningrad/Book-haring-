@@ -6,17 +6,24 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BookSwiftUIView: View {
     
-    private let viewModel: BookViewModel
+    private let viewModel: BookViewModelProtocol
     
-    init(viewModel: BookViewModel) {
+    init(viewModel: BookViewModelProtocol) {
         self.viewModel = viewModel
     }
     
     var body: some View {
         VStack(alignment: .center) {
+            WebImage(url: URL(string: viewModel.imageUrl))
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 250, height: 350, alignment: .center)
+                .cornerRadius(25)
+                .clipped()
             Text(viewModel.title)
                 .font(.title)
             Text(viewModel.author)
@@ -26,6 +33,7 @@ struct BookSwiftUIView: View {
             Button("Забрать книжку") {
                 takeBook()
             }
+            .padding(.vertical)
             .font(.headline)
         }
         .padding()

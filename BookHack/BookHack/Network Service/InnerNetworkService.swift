@@ -20,6 +20,18 @@ final class InnerNetworkService: InnerNetworkServiceProtocol {
     private let db = Firestore.firestore()
     
     
+    func loadBooks(amount: Int, completion: @escaping ([BookResponseModel]) -> Void) {
+        db.collection("library").getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                completion([])
+            } else if let documents = querySnapshot?.documents {
+                let books = documents.compactMap { try? $0.data(as: BookResponseModel.self) }
+                completion(books)
+            }
+        }
+    }
+    
     func loadReservedBooks(completion: @escaping ([BookResponseModel]) -> Void) {
         guard let userId = Auth.auth().currentUser?.uid else {
             return
