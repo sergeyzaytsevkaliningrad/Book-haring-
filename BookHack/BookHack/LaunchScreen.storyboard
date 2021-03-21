@@ -19,20 +19,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="fw6-lf-IiR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-ti-v6H">
-                                <rect key="frame" x="54" y="192" width="307" height="512"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-ti-v6H">
+                                <rect key="frame" x="53" y="207" width="308" height="482"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Uwj-ti-v6H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="36a-d3-pbw"/>
                             <constraint firstItem="fw6-lf-IiR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Drv-vv-EcV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fw6-lf-IiR" secondAttribute="trailing" id="IZ2-Po-AEn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uwj-ti-v6H" secondAttribute="trailing" constant="53" id="M2n-wY-A8U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fw6-lf-IiR" secondAttribute="bottom" constant="-34" id="THw-Xp-Ouh"/>
                             <constraint firstItem="fw6-lf-IiR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="cge-uR-uIk"/>
-                            <constraint firstItem="Uwj-ti-v6H" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="d4o-Zp-Nqy"/>
-                            <constraint firstItem="Uwj-ti-v6H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="ySe-fx-X23"/>
+                            <constraint firstItem="Uwj-ti-v6H" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nri-9J-EBV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,7 +42,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="512" height="512"/>
+        <image name="Image-2" width="518" height="482"/>
         <image name="backgroundImage" width="375" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
