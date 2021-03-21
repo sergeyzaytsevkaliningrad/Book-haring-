@@ -27,8 +27,9 @@ final class UserViewBuilder: UserViewBuilderProtocol {
     
     func makeBookCatalogController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController {
         let viewModel = CatalogViewModel(networkService: networkService, coordinator: coordinator)
-        let controller = CatalogViewController(viewModel: viewModel)
-        return controller
+//        let controller = CatalogViewController(viewModel: viewModel)
+        
+        return UIHostingController(rootView: CatalogSwiftView(viewModel: viewModel))
     }
     
     func makeScannerCodeController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController {

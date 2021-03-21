@@ -710,8 +710,7 @@
 				53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */,
 				53668F1E26061811002C9B5E /* EnterNameViewController.swift in Sources */,
 				53668F1A26061811002C9B5E /* NumberVerificationViewController.swift in Sources */,
-				129389F82606312400EA3FF3 /* ViewController.swift in Sources */,
-				5356E1B22606667100BEF58C /* BookViewController.swift in Sources */,
+				129389F82606312400EA3FF3 /* ARView.swift in Sources */,
 				129389F82606312400EA3FF3 /* ARView.swift in Sources */,
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
 				12447FE626077C0A00BADB04 /* UsersRaiting.swift in Sources */,
@@ -897,7 +896,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3S3TW83623;
+				DEVELOPMENT_TEAM = QJTX6ZW7M3;
 				INFOPLIST_FILE = BookHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -917,7 +916,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3S3TW83623;
+				DEVELOPMENT_TEAM = QJTX6ZW7M3;
 				INFOPLIST_FILE = BookHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
