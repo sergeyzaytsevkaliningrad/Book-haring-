@@ -1,5 +1,5 @@
 //
-//  ViewController+ARSCNViewDelegate.swift
+//  ARViewController.swift
 //
 //  UsersRaiting.swift
 //  BookHack
@@ -12,7 +12,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-extension ARViewCortoller: ARSCNViewDelegate {
+extension ARViewController: ARSCNViewDelegate {
     
     // MARK: - ARSCNViewDelegate
     

@@ -12,8 +12,8 @@
 		12447FCD260744E800BADB04 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12447FCC260744E800BADB04 /* Tutor.swift */; };
 		129389E826062FFF00EA3FF3 /* ARScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129389E726062FFF00EA3FF3 /* ARScreen.xib */; };
 		129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 129389F12606310C00EA3FF3 /* DetailScene.sks */; };
-		129389F82606312400EA3FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F62606312400EA3FF3 /* ViewController.swift */; };
-		129389F92606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */; };
+		129389F82606312400EA3FF3 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F62606312400EA3FF3 /* ARView.swift */; };
+		129389F92606312400EA3FF3 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F72606312400EA3FF3 /* ARViewController.swift */; };
 		12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */; };
 		5356E1B22606667100BEF58C /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356E1B12606667100BEF58C /* BookViewController.swift */; };
 		5356E1B72606667D00BEF58C /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356E1B62606667D00BEF58C /* BookViewModel.swift */; };
@@ -96,8 +96,8 @@
 		12447FCC260744E800BADB04 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		129389E726062FFF00EA3FF3 /* ARScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARScreen.xib; sourceTree = "<group>"; };
 		129389F12606310C00EA3FF3 /* DetailScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DetailScene.sks; sourceTree = "<group>"; };
-		129389F62606312400EA3FF3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		129389F62606312400EA3FF3 /* ARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		129389F72606312400EA3FF3 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.debug.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -219,8 +219,8 @@
 		129389ED2606301400EA3FF3 /* ScreensXib */ = {
 			isa = PBXGroup;
 			children = (
-				129389F62606312400EA3FF3 /* ViewController.swift */,
-				129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */,
+				129389F62606312400EA3FF3 /* ARView.swift */,
+				129389F72606312400EA3FF3 /* ARViewController.swift */,
 				129389E726062FFF00EA3FF3 /* ARScreen.xib */,
 			);
 			path = ScreensXib;
@@ -706,7 +706,7 @@
 				53668F1E26061811002C9B5E /* EnterNameViewController.swift in Sources */,
 				53668F1A26061811002C9B5E /* NumberVerificationViewController.swift in Sources */,
 				5356E1B22606667100BEF58C /* BookViewController.swift in Sources */,
-				129389F82606312400EA3FF3 /* ViewController.swift in Sources */,
+				129389F82606312400EA3FF3 /* ARView.swift in Sources */,
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
 				12447FCD260744E800BADB04 /* Tutor.swift in Sources */,
 				12447FC026073F6400BADB04 /* UsersRaiting.swift in Sources */,
@@ -726,7 +726,7 @@
 				53668F5126061A33002C9B5E /* InnerNetworkService.swift in Sources */,
 				53668EE8260612D6002C9B5E /* CoordinatorProtocol.swift in Sources */,
 				53668F35260618B1002C9B5E /* AppFonts.swift in Sources */,
-				129389F92606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift in Sources */,
+				129389F92606312400EA3FF3 /* ARViewController.swift in Sources */,
 				53668F0D26061776002C9B5E /* AuthServiceErrors.swift in Sources */,
 				53E74FF02606391500F76D03 /* UserFlowCoordinatorProtocol.swift in Sources */,
 				53668E8F26060740002C9B5E /* SceneDelegate.swift in Sources */,
