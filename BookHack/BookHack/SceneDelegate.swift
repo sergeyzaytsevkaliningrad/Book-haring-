@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -42,6 +43,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.mainCoordinator = mainCoordinator
             mainCoordinator.start()
             window.makeKeyAndVisible()
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
+                 (granted, error) in
+                 if granted {
+                     print("yes")
+                 } else {
+                     print("No")
+                 }
+             }
         }
     }
 
@@ -68,6 +77,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+        print("adsda")
+        
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Время платить по счетам!😁"
+        content.subtitle = ""
+        content.body = "Время чтения книжки подходит к концу. Осталось 3 дня."
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+        print("AAAAAQAA")
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.

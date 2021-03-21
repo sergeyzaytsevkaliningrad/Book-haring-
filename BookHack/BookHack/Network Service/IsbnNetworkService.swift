@@ -31,8 +31,14 @@ final class IsbnNetworkService: IsbnNetworkServiceProtocol {
         db.collection("library").whereField("isbn", isEqualTo: isbn).getDocuments { (querySnapshot, error) in
             if let error = error {
                 completion(.failure(error))
-            } else if let document = try? querySnapshot?.documents.first?.data(as: BookResponseModel.self) {
-                completion(.success(document))
+            } else if let document = querySnapshot?.documents.first {
+                do {
+                    if let docData = try document.data(as: BookResponseModel.self) {
+                    completion(.success(docData))
+                    }
+                } catch {
+                    print(error)
+                }
             } else {
                 print("Не удалось скачать книжку")
             }
