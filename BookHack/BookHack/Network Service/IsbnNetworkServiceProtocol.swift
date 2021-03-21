@@ -8,5 +8,5 @@
 import Foundation
 
 protocol IsbnNetworkServiceProtocol {
-    func getBookInfo(by isbn: String, completion: @escaping (Result<IsbnResponseModel, Error>) -> Void)
+    func getBookInfo(by isbn: String, completion: @escaping (Result<BookResponseModel, Error>) -> Void)
 }

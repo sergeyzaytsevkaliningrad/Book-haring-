@@ -18,7 +18,7 @@ struct UserProfileView: View {
     var body: some View {
         VStack {
             HStack {
-                VStack {
+                VStack(alignment: .leading) {
                     Text("\(viewModel.name)")
                         .fontWeight(.medium)
                         .font(.title)

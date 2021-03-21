@@ -7,15 +7,15 @@
 
 import Foundation
 
-class BookViewModel {
+class BookViewModel: ObservableObject {
     private let coordinator: UserFlowCoordinatorProtocol
     private let networkService: InnerNetworkServiceProtocol
-    private let bookModel: IsbnResponseModel
+    private let bookModel: BookResponseModel
     
     init(
         coordinator: UserFlowCoordinatorProtocol,
         networkService: InnerNetworkServiceProtocol,
-        bookModel: IsbnResponseModel
+        bookModel: BookResponseModel
     ) {
         self.coordinator = coordinator
         self.networkService = networkService
@@ -23,18 +23,24 @@ class BookViewModel {
     }
     
     var author: String {
-        bookModel.items?.first?.volumeInfo?.authors?.first ?? ""
+        bookModel.author
     }
 
     var title: String {
-        bookModel.items?.first?.volumeInfo?.title ?? ""
+        bookModel.title
     }
     
-    var subtitle: String {
-        bookModel.items?.first?.volumeInfo?.subtitle ?? ""
+    var isbnCode: String {
+        bookModel.isbn
     }
     
-    var description: String {
-        bookModel.items?.first?.volumeInfo?.volumeInfoDescription ?? ""
+    func handleTakeBook() {
+        networkService.reserveBook(book: bookModel) { error in
+            print(error ?? "Успешно resevred")
+            DispatchQueue.main.async {
+                self.coordinator.showProfile()
+            }
+        }
     }
+    
 }

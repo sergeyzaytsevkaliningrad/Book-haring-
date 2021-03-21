@@ -19,6 +19,23 @@ final class InnerNetworkService: InnerNetworkServiceProtocol {
     
     private let db = Firestore.firestore()
     
+    
+    func reserveBook(book: BookResponseModel, completion: @escaping (Error?) -> Void) {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        _ = try? db.collection(FirebaseCollection.users).document(userId).collection("Reserved").document(book.isbn).setData(from: book)
+        completion(nil)
+    }
+    
+    func deleteBook(isbn: String, completion: @escaping (Error?) -> Void) {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            return
+        }
+        db.collection(FirebaseCollection.users).document(userId).collection("Reserved").document(isbn).delete(completion: completion)
+    }
+    
     func upload(username: String, completion: @escaping (Result<Void, Error>) -> Void) {
         guard let userId = Auth.auth().currentUser?.uid else {
             completion(.failure(Errors.userIdNotFound))
