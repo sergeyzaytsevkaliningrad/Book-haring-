@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class AppTabBarController: UITabBarController {
     
@@ -30,7 +31,13 @@ class AppTabBarController: UITabBarController {
         userFlow.start()
         userProfileFlow.start()
         view.tintColor = AppColors.systemPink
+        let ratingController = UIHostingController(rootView: UsersRaiting())
+        ratingController.tabBarItem = UITabBarItem(
+            title: "Рейтинг",
+            image: UIImage(systemName: "star.fill",
+                           withConfiguration: UIImage.SymbolConfiguration(weight: .semibold)), tag: 0)
         viewControllers = [
+            ratingController,
             userFlow.navigationController,
             userProfileFlow.navigationController
         ]

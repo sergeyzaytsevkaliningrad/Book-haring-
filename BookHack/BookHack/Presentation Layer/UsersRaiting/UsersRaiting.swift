@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UsersRaiting: View {
-    var tutors: [Tutor] = []
+    var tutors: [Tutor] = testData
     @State var showGoodRaiting: Bool = false
     
     var body: some View {
@@ -18,20 +18,14 @@ struct UsersRaiting: View {
                 .font(.largeTitle)
                 .accentColor(.red)
                 .colorScheme(.dark)
-            VStack(alignment: .leading){ Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
-                
+            VStack(alignment: .leading) {
+                Toggle(isOn: $showGoodRaiting) {
+                    Label("Должники", systemImage: "book")
+                        .colorScheme(.dark)
+                        .font(.title2)
+                }
             }
-            
-            }
-            
-            //VStack(alignment: .leading) {
-            //                    Toggle(isOn: $showGoodRaiting) {
-            //                        Label("Должники", systemImage: "book")
-            //                            .colorScheme(.dark)
-            //                            .font(.title2)
-            //                     }
-            //                    }
+            .padding()
             List(tutors) { tutor in
                 Image(tutor.imageName).cornerRadius(30.0)
                 VStack(alignment: .leading) {
@@ -47,7 +41,10 @@ struct UsersRaiting: View {
                     
                 }
             }
-        }.background(SwiftUI.Image("Coolerbackground").edgesIgnoringSafeArea(.all))//.hidden()
+            .cornerRadius(25)
+            .padding()
+        }
+        .background(SwiftUI.Image("Coolerbackground").edgesIgnoringSafeArea(.all))//.hidden()
         
         //Good raiting
         //        VStack {

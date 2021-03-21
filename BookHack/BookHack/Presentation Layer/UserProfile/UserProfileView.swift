@@ -35,7 +35,7 @@ struct UserProfileView: View {
                 .foregroundColor(Color.gray)
                 .font(.title2)
             reservedBooks
-//            Button("Выйти", action: logOut)
+            Button("Выйти", action: logOut)
         }
         .padding()
         .onAppear(perform: loadUserInfo)
