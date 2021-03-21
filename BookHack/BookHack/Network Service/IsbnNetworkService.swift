@@ -5,9 +5,12 @@
 //  Created by Yoav Nemirovsky on 20.03.2021.
 //
 
-import Foundation
+import Firebase
+import FirebaseFirestoreSwift
 
 final class IsbnNetworkService: IsbnNetworkServiceProtocol {
+    
+    private let db = Firestore.firestore()
     
     enum Endpooint {
         case isbn(number: String)
@@ -23,20 +26,16 @@ final class IsbnNetworkService: IsbnNetworkServiceProtocol {
     
     func getBookInfo(
         by isbn: String,
-        completion: @escaping (Result<IsbnResponseModel, Error>) -> Void
+        completion: @escaping (Result<BookResponseModel, Error>) -> Void
     ) {
-        let session = URLSession(configuration: .default)
-        guard let url = Endpooint.isbn(number: isbn).url else { return }
-        let task = session.dataTask(with: URLRequest(url: url)) { (data, response, error) in
+        db.collection("library").whereField("isbn", isEqualTo: isbn).getDocuments { (querySnapshot, error) in
             if let error = error {
                 completion(.failure(error))
-            } else if let rawData = data,
-                      let data = try? JSONDecoder().decode(IsbnResponseModel.self, from: rawData) {
-                completion(.success(data))
+            } else if let document = try? querySnapshot?.documents.first?.data(as: BookResponseModel.self) {
+                completion(.success(document))
             } else {
-                fatalError()
+                print("Не удалось скачать книжку")
             }
         }
-        task.resume()
     }
 }

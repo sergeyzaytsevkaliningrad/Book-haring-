@@ -23,6 +23,7 @@ final class ISBNScannerDelegate {
     }
     
     func ISBNCodeHandler(code: String) {
+        print(code)
         ISBNService.getBookInfo(by: code) { result in
             switch result {
             case .success(let model):
