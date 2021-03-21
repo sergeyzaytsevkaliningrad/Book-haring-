@@ -64,6 +64,8 @@ final class MainCoordinator: Coordinator {
         )
         
         let userProfileCoordinator = UserProfileCoordinator(navigationController: UINavigationController(), networkService: InnerNetworkService())
+        userProfileCoordinator.parentCoordinator = self
+        childCoordinators.append(userProfileCoordinator)
         
         let tabBar = AppTabBarController(userFlow: userCoordinator, userProfileFlow: userProfileCoordinator)
         window.rootViewController =  tabBar

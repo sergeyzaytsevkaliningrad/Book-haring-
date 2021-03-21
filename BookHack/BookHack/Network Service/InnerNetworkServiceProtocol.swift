@@ -11,4 +11,10 @@ import Foundation
 protocol InnerNetworkServiceProtocol {
     func upload(username: String, completion: @escaping (Result<Void, Error>) -> Void)
     func getUsername(completion: @escaping (Result<String, Error>) -> Void)
+    func loadUserInfo(completion: @escaping (Result<UserInfoModel, Error>) -> Void)
+}
+
+struct UserInfoModel: Codable {
+    let username: String?
+    let phoneNumber: String?
 }

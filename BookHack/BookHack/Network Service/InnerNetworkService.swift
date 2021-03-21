@@ -8,6 +8,7 @@
 
 import Firebase
 import Foundation
+import FirebaseFirestoreSwift
 
 final class InnerNetworkService: InnerNetworkServiceProtocol {
     
@@ -23,7 +24,7 @@ final class InnerNetworkService: InnerNetworkServiceProtocol {
             completion(.failure(Errors.userIdNotFound))
             return
         }
-        db.collection(FirebaseCollection.users).document(userId).setData(["username": username]) { error in
+        db.collection(FirebaseCollection.users).document(userId).updateData(["username": username]) { error in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -48,6 +49,25 @@ final class InnerNetworkService: InnerNetworkServiceProtocol {
                 completion(.success(username))
             }
         }
+    }
+    
+    func loadUserInfo(completion: @escaping (Result<UserInfoModel, Error>) -> Void) {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            completion(.failure(Errors.userIdNotFound))
+            return
+        }
+        db.collection(FirebaseCollection.users).document(userId).getDocument { document, error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                guard let userData = try? document?.data(as: UserInfoModel.self) else {
+                    completion(.failure(Errors.userNameNotFound))
+                    return
+                }
+                completion(.success(userData))
+            }
+        }
+
     }
     
     enum Errors: Error {

@@ -9,11 +9,14 @@ import UIKit
 import SwiftUI
 
 class UserProfileCoordinator: UserProfileCoordinatorProtocol {
+    
     var childCoordinators: [Coordinator] = []
     
     var container: [UIViewController] = []
     
     var navigationController: UINavigationController
+    
+    weak var parentCoordinator: MainCoordinator?
     
     private let networkService: InnerNetworkServiceProtocol
     
@@ -35,5 +38,7 @@ class UserProfileCoordinator: UserProfileCoordinatorProtocol {
         navigationController.pushViewController(controller, animated: true)
     }
     
-    
+    func userSignOut() {
+        parentCoordinator?.userSignOut(self)
+    }
 }

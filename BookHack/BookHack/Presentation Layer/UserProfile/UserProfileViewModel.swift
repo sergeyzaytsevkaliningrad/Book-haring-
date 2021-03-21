@@ -21,6 +21,22 @@ class UserProfileViewModel: ObservableObject {
     @Published var name = ""
     @Published var phoneNumber = ""
     
-//    func loadUserInfo(
+    func loadUserInfo() {
+        networkService.loadUserInfo { result in
+            switch result {
+            case .success(let model):
+                DispatchQueue.main.async {
+                    self.name = model.username ?? "empty"
+                    self.phoneNumber = model.phoneNumber ?? "empty"
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
     
+    
+    func userSignOut() {
+        coordinator.userSignOut()
+    }
 }

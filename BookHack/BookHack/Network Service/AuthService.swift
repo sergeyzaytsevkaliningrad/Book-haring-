@@ -13,6 +13,8 @@ final class AuthService: NSObject, FirebaseAuthServiceProtocol {
     
     private let db = Firestore.firestore()
     
+    private var currentPhoneNumber: String?
+    
     func performSignIn(phoneNumber: String?, completion: @escaping (Result<Void, Errors>) -> Void) {
         
         guard let phoneNumber = phoneNumber else {
@@ -22,12 +24,13 @@ final class AuthService: NSObject, FirebaseAuthServiceProtocol {
         
         Auth.auth().languageCode = Locale.current.languageCode
         
-        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { [weak self] (verificationID, error) in
             if let error = error {
                 completion(.failure(.authWithPhoneNumberFailed(error: error)))
                 return
             }
             UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            self?.currentPhoneNumber = phoneNumber
             completion(.success(()))
         }
     }
@@ -45,9 +48,23 @@ final class AuthService: NSObject, FirebaseAuthServiceProtocol {
             withVerificationID: verificationID,
             verificationCode: verificationCode
         )
-        Auth.auth().signIn(with: credential) { authResult, error in
+        Auth.auth().signIn(with: credential) { [weak self] authResult, error in
             if let error = error {
                 completion(.failure(.authWithPhoneNumberFailed(error: error)))
+            } else {
+                self?.upload(phoneNumber: self?.currentPhoneNumber) { _ in }
+                completion(.success(()))
+            }
+        }
+    }
+    
+    private func upload(phoneNumber: String?, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            return
+        }
+        db.collection("Users").document(userId).setData(["phoneNumber": phoneNumber ?? "error"]) { error in
+            if let error = error {
+                completion(.failure(error))
             } else {
                 completion(.success(()))
             }

@@ -16,6 +16,30 @@ struct UserProfileView: View {
     }
     
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            HStack {
+                VStack {
+                    Text("\(viewModel.name)")
+                        .fontWeight(.medium)
+                        .font(.title)
+                    Text("\(viewModel.phoneNumber)")
+                        .foregroundColor(Color.gray)
+                        .font(.title2)
+                }
+                Spacer()
+            }
+            Spacer()
+            Button("Выйти", action: logOut)
+        }
+        .padding()
+        .onAppear(perform: loadUserInfo)
+    }
+    
+    private func loadUserInfo() {
+        viewModel.loadUserInfo()
+    }
+    
+    private func logOut() {
+        viewModel.userSignOut()
     }
 }

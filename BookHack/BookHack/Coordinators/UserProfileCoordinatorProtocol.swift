@@ -8,5 +8,5 @@
 import Foundation
 
 protocol UserProfileCoordinatorProtocol: Coordinator {
-    
+    func userSignOut()
 }
