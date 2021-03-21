@@ -16,15 +16,20 @@ struct BookSwiftUIView: View {
     }
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(viewModel.title)
+                .font(.title)
             Text(viewModel.author)
-            Text(viewModel.isbnCode)
+                .font(.title2)
+            Text("ISBN: \(viewModel.isbnCode)")
+                .font(.headline)
             Spacer()
             Button("Забрать книжку") {
                 takeBook()
             }
+            .font(.headline)
         }
+        .padding()
     }
     
     private func takeBook() {

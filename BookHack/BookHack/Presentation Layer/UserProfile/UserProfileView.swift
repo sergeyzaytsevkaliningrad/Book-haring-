@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct UserProfileView: View {
     
@@ -68,17 +69,86 @@ struct UserProfileView: View {
 
 struct BookDetailedView: View {
     
+    @State private var sourceType: UIImagePickerController.SourceType = .camera
+    @State private var selectedImage: UIImage?
+    @State private var isImagePickerDisplay = false
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                if selectedImage != nil {
+                    Image(uiImage: selectedImage!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(25)
+                        .frame(width: 300, height: 300)
+                    Button(action: returnBook) {
+                        Text("Вернуть Книжку")
+                            .fontWeight(.medium)
+                            .font(.title2)
+                    }
+                } else {
+                    Button("Сделайте фото книжки") {
+                        self.sourceType = .camera
+                        self.isImagePickerDisplay.toggle()
+                    }
+                    .padding()
+                }
+
+            }
+            .sheet(isPresented: self.$isImagePickerDisplay) {
+                ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
+            }
+        }
+    }
+    
     let book: BookResponseModel
     
     let viewModel: UserProfileViewModel
-    
-    var body: some View {
-        Button(action: returnBook) {
-            Text("Вернуть")
-        }
-        
-    }
+
     private func returnBook() {
         viewModel.returnBook(book: book)
     }
+}
+
+
+// MARK: - Image Picker
+
+
+struct ImagePickerView: UIViewControllerRepresentable {
+    
+    @Binding var selectedImage: UIImage?
+    @Environment(\.presentationMode) var isPresented
+    var sourceType: UIImagePickerController.SourceType
+        
+    func makeUIViewController(context: Context) -> UIImagePickerController {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = self.sourceType
+        imagePicker.delegate = context.coordinator // confirming the delegate
+        return imagePicker
+    }
+
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
+
+    }
+
+    // Connecting the Coordinator class with this struct
+    func makeCoordinator() -> PickerCoordinator {
+        return PickerCoordinator(picker: self)
+    }
+}
+
+class PickerCoordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    var picker: ImagePickerView
+    
+    init(picker: ImagePickerView) {
+        self.picker = picker
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectedImage = info[.originalImage] as? UIImage else { return }
+        self.picker.selectedImage = selectedImage
+        self.picker.isPresented.wrappedValue.dismiss()
+    }
+    
 }
