@@ -14,7 +14,10 @@ final class UserFlowCoordinator: UserFlowCoordinatorProtocol {
     
     var navigationController: UINavigationController
     
+    weak var parent: MainCoordinator?
+    
     private let builder: UserViewBuilderProtocol
+    
     
     init(navigationController: UINavigationController,
          builder: UserViewBuilderProtocol) {
@@ -36,9 +39,13 @@ final class UserFlowCoordinator: UserFlowCoordinatorProtocol {
         presentController(controller: controller, animated: true, style: .fullScreen)
     }
     
-    func showBook(model: IsbnResponseModel) {
+    func showBook(model: BookResponseModel) {
         let controller = builder.makeBookController(model: model, coordinator: self)
         dismissPresentedController()
         navigationController.pushViewController(controller, animated: true)
+    }
+    
+    func showProfile() {
+        navigationController.popViewController(animated: false)
     }
 }

@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import SwiftUI
 
 protocol UserViewBuilderProtocol {
     func makeBookCatalogController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController
     func makeScannerCodeController(coordinator: UserFlowCoordinatorProtocol) -> UIViewController
-    func makeBookController(model: IsbnResponseModel, coordinator: UserFlowCoordinatorProtocol) -> UIViewController
+    func makeBookController(model: BookResponseModel, coordinator: UserFlowCoordinatorProtocol) -> UIViewController
 }
 
 final class UserViewBuilder: UserViewBuilderProtocol {
@@ -36,9 +37,10 @@ final class UserViewBuilder: UserViewBuilderProtocol {
         return controller
     }
     
-    func makeBookController(model: IsbnResponseModel, coordinator: UserFlowCoordinatorProtocol) -> UIViewController {
+    func makeBookController(model: BookResponseModel, coordinator: UserFlowCoordinatorProtocol) -> UIViewController {
         let viewModel = BookViewModel(coordinator: coordinator, networkService: networkService, bookModel: model)
-        let controller = BookViewController(viewModel: viewModel)
+        let view = BookSwiftUIView(viewModel: viewModel)
+        let controller = UIHostingController(rootView: view)
         return controller
     }
 }

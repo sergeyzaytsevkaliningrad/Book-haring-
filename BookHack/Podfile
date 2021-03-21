@@ -12,6 +12,7 @@ target 'BookHack' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'PhoneNumberKit', '~> 3.3'
+  pod 'SDWebImageSwiftUI'
 
   target 'BookHackTests' do
     inherit! :search_paths

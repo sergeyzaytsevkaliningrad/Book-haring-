@@ -15,7 +15,7 @@
 		129389F82606312400EA3FF3 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F62606312400EA3FF3 /* ARView.swift */; };
 		129389F92606312400EA3FF3 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F72606312400EA3FF3 /* ARViewController.swift */; };
 		12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */; };
-		5356E1B22606667100BEF58C /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356E1B12606667100BEF58C /* BookViewController.swift */; };
+		5307BB7B26073E8C00EC3C3B /* BookSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307BB7A26073E8C00EC3C3B /* BookSwiftUIView.swift */; };
 		5356E1B72606667D00BEF58C /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356E1B62606667D00BEF58C /* BookViewModel.swift */; };
 		53668E8D26060740002C9B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668E8C26060740002C9B5E /* AppDelegate.swift */; };
 		53668E8F26060740002C9B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668E8E26060740002C9B5E /* SceneDelegate.swift */; };
@@ -52,6 +52,7 @@
 		53668F5126061A33002C9B5E /* InnerNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5026061A33002C9B5E /* InnerNetworkService.swift */; };
 		53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5526061B92002C9B5E /* AuthCoordinator.swift */; };
 		53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */; };
+		538670CA26076F3400B933EF /* CatalogSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538670C926076F3400B933EF /* CatalogSwiftView.swift */; };
 		5399931726063C7500DD5D29 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931626063C7500DD5D29 /* CatalogViewController.swift */; };
 		5399931C26063CA700DD5D29 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931B26063CA700DD5D29 /* CatalogViewModel.swift */; };
 		5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399932126063E2B00DD5D29 /* AppTabBarController.swift */; };
@@ -103,7 +104,7 @@
 		2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.debug.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.debug.xcconfig"; sourceTree = "<group>"; };
 		4BDB7B2408FFD51A2DC4BC63 /* Pods-BookHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHackTests.debug.xcconfig"; path = "Target Support Files/Pods-BookHackTests/Pods-BookHackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4936870943DDE0A6C0F3A3 /* Pods-BookHack-BookHackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack-BookHackUITests.release.xcconfig"; path = "Target Support Files/Pods-BookHack-BookHackUITests/Pods-BookHack-BookHackUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5356E1B12606667100BEF58C /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		5307BB7A26073E8C00EC3C3B /* BookSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSwiftUIView.swift; sourceTree = "<group>"; };
 		5356E1B62606667D00BEF58C /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		53668E892606073F002C9B5E /* BookHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53668E8C26060740002C9B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		53668F5026061A33002C9B5E /* InnerNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerNetworkService.swift; sourceTree = "<group>"; };
 		53668F5526061B92002C9B5E /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewBuilder.swift; sourceTree = "<group>"; };
+		538670C926076F3400B933EF /* CatalogSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSwiftView.swift; sourceTree = "<group>"; };
 		5399931626063C7500DD5D29 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		5399931B26063CA700DD5D29 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		5399932126063E2B00DD5D29 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
@@ -229,8 +231,8 @@
 		5356E1B02606665E00BEF58C /* Book */ = {
 			isa = PBXGroup;
 			children = (
-				5356E1B12606667100BEF58C /* BookViewController.swift */,
 				5356E1B62606667D00BEF58C /* BookViewModel.swift */,
+				5307BB7A26073E8C00EC3C3B /* BookSwiftUIView.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -301,8 +303,8 @@
 				53668F5526061B92002C9B5E /* AuthCoordinator.swift */,
 				53668F2B2606186A002C9B5E /* AuthCoordinatorProtocol.swift */,
 				53668EE7260612D6002C9B5E /* CoordinatorProtocol.swift */,
-				53668F04260614FB002C9B5E /* MainCoordinator.swift */,
 				53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */,
+				53668F04260614FB002C9B5E /* MainCoordinator.swift */,
 				53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */,
 				539E5A5D260701D500431663 /* UserProfileCoordinatorProtocol.swift */,
 				539E5A62260701EA00431663 /* UserProfileCoordinator.swift */,
@@ -388,6 +390,7 @@
 			children = (
 				5399931626063C7500DD5D29 /* CatalogViewController.swift */,
 				5399931B26063CA700DD5D29 /* CatalogViewModel.swift */,
+				538670C926076F3400B933EF /* CatalogSwiftView.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -693,11 +696,13 @@
 				5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */,
 				53668F4C260619EA002C9B5E /* FillButton.swift in Sources */,
 				53668F05260614FB002C9B5E /* MainCoordinator.swift in Sources */,
+				5307BB7B26073E8C00EC3C3B /* BookSwiftUIView.swift in Sources */,
 				53668EEE26061334002C9B5E /* ViewBuilders.swift in Sources */,
 				53668F1B26061811002C9B5E /* EnterPhoneNumberViewController.swift in Sources */,
 				5399931C26063CA700DD5D29 /* CatalogViewModel.swift in Sources */,
 				53668F36260618B1002C9B5E /* AppColors.swift in Sources */,
 				53668F4026061965002C9B5E /* InnerNetworkServiceProtocol.swift in Sources */,
+				538670CA26076F3400B933EF /* CatalogSwiftView.swift in Sources */,
 				53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */,
 				53668F262606181E002C9B5E /* WelcomeControllerDelegate.swift in Sources */,
 				53668F0E26061776002C9B5E /* AuthServiceProtocol.swift in Sources */,
@@ -705,6 +710,7 @@
 				53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */,
 				53668F1E26061811002C9B5E /* EnterNameViewController.swift in Sources */,
 				53668F1A26061811002C9B5E /* NumberVerificationViewController.swift in Sources */,
+				129389F82606312400EA3FF3 /* ViewController.swift in Sources */,
 				5356E1B22606667100BEF58C /* BookViewController.swift in Sources */,
 				129389F82606312400EA3FF3 /* ARView.swift in Sources */,
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,

@@ -34,11 +34,15 @@ class UserProfileCoordinator: UserProfileCoordinatorProtocol {
         controller.tabBarItem = UITabBarItem(
             title: "Профиль",
             image: UIImage(systemName: "person.crop.circle.fill",
-                           withConfiguration: UIImage.SymbolConfiguration(weight: .semibold)), tag: 0)
+                           withConfiguration: UIImage.SymbolConfiguration(weight: .semibold)), tag: 1)
         navigationController.pushViewController(controller, animated: true)
     }
     
     func userSignOut() {
         parentCoordinator?.userSignOut(self)
+    }
+    
+    func userReturnBook() {
+        navigationController.popViewController(animated: true)
     }
 }

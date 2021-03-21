@@ -22,7 +22,7 @@ class CatalogViewController: UIViewController {
     
     private let giveTakeButton: GiveTakeButton = {
         let giveTakeButton = GiveTakeButton(type: .system)
-        giveTakeButton.setTitle("Взять / Вернуть", for: .normal)
+        giveTakeButton.setTitle("Взять книжку", for: .normal)
         return giveTakeButton
     }()
     

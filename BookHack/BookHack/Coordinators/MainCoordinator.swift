@@ -14,6 +14,8 @@ final class MainCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     
+    private var tabBar: UITabBarController?
+    
     private let viewBuilder: ViewBuilderProtocol
     private let authBuilder: AuthViewBuilderProtocol
     private let userBuilder: UserViewBuilderProtocol
@@ -63,11 +65,14 @@ final class MainCoordinator: Coordinator {
             builder: userBuilder
         )
         
+        userCoordinator.parent = self
+        
         let userProfileCoordinator = UserProfileCoordinator(navigationController: UINavigationController(), networkService: InnerNetworkService())
         userProfileCoordinator.parentCoordinator = self
         childCoordinators.append(userProfileCoordinator)
         
         let tabBar = AppTabBarController(userFlow: userCoordinator, userProfileFlow: userProfileCoordinator)
+        self.tabBar = tabBar
         window.rootViewController =  tabBar
         UIView.transition(with: self.window,
                           duration: 0.6,
@@ -86,6 +91,10 @@ final class MainCoordinator: Coordinator {
         guard let _ = try? authService.signOutUser() else { return }
         deleteChild(child)
         startAuthFlow()
+    }
+    
+    func showUserProfile() {
+        tabBar?.selectedViewController = tabBar?.viewControllers?.last
     }
     
     private func deleteChild(_ child: Coordinator) {
