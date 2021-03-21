@@ -10,11 +10,14 @@ import UIKit
 class AppTabBarController: UITabBarController {
     
     private let userFlow: UserFlowCoordinatorProtocol
+    private let userProfileFlow: UserProfileCoordinatorProtocol
     
     init(
-        userFlow: UserFlowCoordinatorProtocol
+        userFlow: UserFlowCoordinatorProtocol,
+        userProfileFlow: UserProfileCoordinatorProtocol
     ) {
         self.userFlow = userFlow
+        self.userProfileFlow = userProfileFlow
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -25,9 +28,11 @@ class AppTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userFlow.start()
+        userProfileFlow.start()
         view.tintColor = AppColors.systemPink
         viewControllers = [
-            userFlow.navigationController
+            userFlow.navigationController,
+            userProfileFlow.navigationController
         ]
         selectedIndex = 0
     }

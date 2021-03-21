@@ -64,7 +64,9 @@ final class MainCoordinator: Coordinator {
             builder: userBuilder
         )
         
-        let tabBar = AppTabBarController(userFlow: userCoordinator)
+        let userProfileCoordinator = UserProfileCoordinator(navigationController: UINavigationController(), networkService: InnerNetworkService())
+        
+        let tabBar = AppTabBarController(userFlow: userCoordinator, userProfileFlow: userProfileCoordinator)
         window.rootViewController =  tabBar
         UIView.transition(with: self.window,
                           duration: 0.6,

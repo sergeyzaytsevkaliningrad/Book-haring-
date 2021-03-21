@@ -60,6 +60,10 @@
 		5399934626064DB800DD5D29 /* IsbnResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399934526064DB800DD5D29 /* IsbnResponseModel.swift */; };
 		5399934C26065A4E00DD5D29 /* IsbnScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399934B26065A4E00DD5D29 /* IsbnScannerViewController.swift */; };
 		5399935426065B0300DD5D29 /* ISBNScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399935326065B0300DD5D29 /* ISBNScannerDelegate.swift */; };
+		539E5A512607018D00431663 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E5A502607018D00431663 /* UserProfileView.swift */; };
+		539E5A56260701B200431663 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E5A55260701B200431663 /* UserProfileViewModel.swift */; };
+		539E5A5E260701D500431663 /* UserProfileCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E5A5D260701D500431663 /* UserProfileCoordinatorProtocol.swift */; };
+		539E5A63260701EA00431663 /* UserProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E5A62260701EA00431663 /* UserProfileCoordinator.swift */; };
 		53E74FF02606391500F76D03 /* UserFlowCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */; };
 		53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */; };
 		53E74FFA2606396500F76D03 /* UserViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E74FF92606396500F76D03 /* UserViewBuilder.swift */; };
@@ -149,6 +153,10 @@
 		5399934526064DB800DD5D29 /* IsbnResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnResponseModel.swift; sourceTree = "<group>"; };
 		5399934B26065A4E00DD5D29 /* IsbnScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsbnScannerViewController.swift; sourceTree = "<group>"; };
 		5399935326065B0300DD5D29 /* ISBNScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISBNScannerDelegate.swift; sourceTree = "<group>"; };
+		539E5A502607018D00431663 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		539E5A55260701B200431663 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		539E5A5D260701D500431663 /* UserProfileCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		539E5A62260701EA00431663 /* UserProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCoordinator.swift; sourceTree = "<group>"; };
 		53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
 		53E74FF92606396500F76D03 /* UserViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewBuilder.swift; sourceTree = "<group>"; };
@@ -286,6 +294,8 @@
 				53668F04260614FB002C9B5E /* MainCoordinator.swift */,
 				53E74FEF2606391500F76D03 /* UserFlowCoordinatorProtocol.swift */,
 				53E74FF42606392E00F76D03 /* UserFlowCoordinator.swift */,
+				539E5A5D260701D500431663 /* UserProfileCoordinatorProtocol.swift */,
+				539E5A62260701EA00431663 /* UserProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -303,6 +313,7 @@
 		53668EF8260613CD002C9B5E /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				539E5A4C2607018000431663 /* UserProfile */,
 				5356E1B02606665E00BEF58C /* Book */,
 				5399934A26065A3F00DD5D29 /* IsbnScanner */,
 				5399932026063E1400DD5D29 /* Tab bar */,
@@ -393,6 +404,15 @@
 				5399935326065B0300DD5D29 /* ISBNScannerDelegate.swift */,
 			);
 			path = IsbnScanner;
+			sourceTree = "<group>";
+		};
+		539E5A4C2607018000431663 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				539E5A502607018D00431663 /* UserProfileView.swift */,
+				539E5A55260701B200431663 /* UserProfileViewModel.swift */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		B829297BD6951B7F358B4953 /* Pods */ = {
@@ -656,6 +676,7 @@
 				53668F1D26061811002C9B5E /* NumberVerificationDelegate.swift in Sources */,
 				5356E1B72606667D00BEF58C /* BookViewModel.swift in Sources */,
 				53E74FFA2606396500F76D03 /* UserViewBuilder.swift in Sources */,
+				539E5A63260701EA00431663 /* UserProfileCoordinator.swift in Sources */,
 				53668EFB2606143B002C9B5E /* LoadingIndicatorController.swift in Sources */,
 				5399935426065B0300DD5D29 /* ISBNScannerDelegate.swift in Sources */,
 				5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */,
@@ -676,6 +697,7 @@
 				5356E1B22606667100BEF58C /* BookViewController.swift in Sources */,
 				129389F82606312400EA3FF3 /* ViewController.swift in Sources */,
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
+				539E5A5E260701D500431663 /* UserProfileCoordinatorProtocol.swift in Sources */,
 				53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */,
 				53668F0026061474002C9B5E /* LoaderIndicator.swift in Sources */,
 				5399932A2606412300DD5D29 /* GiveTakeButton.swift in Sources */,
@@ -685,6 +707,8 @@
 				53668F2C2606186A002C9B5E /* AuthCoordinatorProtocol.swift in Sources */,
 				53668E8D26060740002C9B5E /* AppDelegate.swift in Sources */,
 				53668F34260618B1002C9B5E /* AppTexts.swift in Sources */,
+				539E5A512607018D00431663 /* UserProfileView.swift in Sources */,
+				539E5A56260701B200431663 /* UserProfileViewModel.swift in Sources */,
 				53668F3B2606192A002C9B5E /* SmsCodeTextField.swift in Sources */,
 				53668F5126061A33002C9B5E /* InnerNetworkService.swift in Sources */,
 				53668EE8260612D6002C9B5E /* CoordinatorProtocol.swift in Sources */,
