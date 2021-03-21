@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import SDWebImageSwiftUI
 
 struct UserProfileView: View {
     
@@ -43,15 +44,25 @@ struct UserProfileView: View {
     var reservedBooks: some View {
         List(viewModel.reservedBooks, id: \.isbn) { book in
             VStack(alignment: .leading) {
-                Text(book.title)
-                    .font(.title3)
-                Text(book.author)
-                    .font(.title3)
-                Text("ISBN: \(book.isbn)")
-                    .font(.caption)
-                NavigationLink(destination: BookDetailedView(book: book, viewModel: viewModel)) {
-                    Text("Вернуть книжку")
-                        .foregroundColor(.gray)
+                HStack {
+                    AnimatedImage(url: URL(string: book.imageUrl ?? ""))
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 80, height: 80, alignment: .center)
+                        .clipped()
+                    VStack(alignment: .leading) {
+                        Text(book.title)
+                            .font(.title3)
+                        Text(book.author)
+                            .font(.title3)
+                        Text("ISBN: \(book.isbn)")
+                            .font(.caption)
+                        NavigationLink(destination: BookDetailedView(book: book, viewModel: viewModel)) {
+                            Text("Вернуть книжку")
+                                .foregroundColor(.gray)
+                        
+                        }
+                    }
                 }
             }
         }
