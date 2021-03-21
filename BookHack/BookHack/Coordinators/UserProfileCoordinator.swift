@@ -41,4 +41,8 @@ class UserProfileCoordinator: UserProfileCoordinatorProtocol {
     func userSignOut() {
         parentCoordinator?.userSignOut(self)
     }
+    
+    func userReturnBook() {
+        navigationController.popViewController(animated: true)
+    }
 }

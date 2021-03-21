@@ -20,6 +20,7 @@ class UserProfileViewModel: ObservableObject {
     
     @Published var name = ""
     @Published var phoneNumber = ""
+    @Published var reservedBooks: [BookResponseModel] = []
     
     func loadUserInfo() {
         networkService.loadUserInfo { result in
@@ -35,6 +36,21 @@ class UserProfileViewModel: ObservableObject {
         }
     }
     
+    func loadReservedBooks() {
+        networkService.loadReservedBooks { [weak self] books in
+            DispatchQueue.main.async {
+                self?.reservedBooks = books
+            }
+        }
+    }
+    
+    func returnBook(book: BookResponseModel) {
+        networkService.deleteBook(isbn: book.isbn) { [weak self] error in
+            DispatchQueue.main.async {
+                self?.coordinator.userReturnBook()
+            }
+        }
+    }
     
     func userSignOut() {
         coordinator.userSignOut()

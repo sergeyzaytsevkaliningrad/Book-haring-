@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BookResponseModel: Codable {
+struct BookResponseModel: Codable, Hashable {
     var title: String
     var author: String
     var isbn: String
