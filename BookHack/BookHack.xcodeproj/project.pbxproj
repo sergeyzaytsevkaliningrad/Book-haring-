@@ -51,6 +51,7 @@
 		53668F5126061A33002C9B5E /* InnerNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5026061A33002C9B5E /* InnerNetworkService.swift */; };
 		53668F5626061B92002C9B5E /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5526061B92002C9B5E /* AuthCoordinator.swift */; };
 		53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */; };
+		538670CA26076F3400B933EF /* CatalogSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538670C926076F3400B933EF /* CatalogSwiftView.swift */; };
 		5399931726063C7500DD5D29 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931626063C7500DD5D29 /* CatalogViewController.swift */; };
 		5399931C26063CA700DD5D29 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399931B26063CA700DD5D29 /* CatalogViewModel.swift */; };
 		5399932226063E2B00DD5D29 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399932126063E2B00DD5D29 /* AppTabBarController.swift */; };
@@ -144,6 +145,7 @@
 		53668F5026061A33002C9B5E /* InnerNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerNetworkService.swift; sourceTree = "<group>"; };
 		53668F5526061B92002C9B5E /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		53668F5A26061BA5002C9B5E /* AuthViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewBuilder.swift; sourceTree = "<group>"; };
+		538670C926076F3400B933EF /* CatalogSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSwiftView.swift; sourceTree = "<group>"; };
 		5399931626063C7500DD5D29 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		5399931B26063CA700DD5D29 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		5399932126063E2B00DD5D29 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 			children = (
 				5399931626063C7500DD5D29 /* CatalogViewController.swift */,
 				5399931B26063CA700DD5D29 /* CatalogViewModel.swift */,
+				538670C926076F3400B933EF /* CatalogSwiftView.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				5399931C26063CA700DD5D29 /* CatalogViewModel.swift in Sources */,
 				53668F36260618B1002C9B5E /* AppColors.swift in Sources */,
 				53668F4026061965002C9B5E /* InnerNetworkServiceProtocol.swift in Sources */,
+				538670CA26076F3400B933EF /* CatalogSwiftView.swift in Sources */,
 				53668F5B26061BA5002C9B5E /* AuthViewBuilder.swift in Sources */,
 				53668F262606181E002C9B5E /* WelcomeControllerDelegate.swift in Sources */,
 				53668F0E26061776002C9B5E /* AuthServiceProtocol.swift in Sources */,
