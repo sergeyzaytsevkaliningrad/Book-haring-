@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12447FC026073F6400BADB04 /* UsersRaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12447FBF26073F6400BADB04 /* UsersRaiting.swift */; };
 		12447FC82607449300BADB04 /* Tutor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12447FC72607449300BADB04 /* Tutor.xcassets */; };
 		12447FCD260744E800BADB04 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12447FCC260744E800BADB04 /* Tutor.swift */; };
+		12447FE626077C0A00BADB04 /* UsersRaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12447FE526077C0A00BADB04 /* UsersRaiting.swift */; };
 		129389E826062FFF00EA3FF3 /* ARScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129389E726062FFF00EA3FF3 /* ARScreen.xib */; };
 		129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 129389F12606310C00EA3FF3 /* DetailScene.sks */; };
 		129389F82606312400EA3FF3 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F62606312400EA3FF3 /* ARView.swift */; };
@@ -91,9 +91,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12447FBF26073F6400BADB04 /* UsersRaiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersRaiting.swift; path = ../../../../../UsersRaiting.swift; sourceTree = "<group>"; };
 		12447FC72607449300BADB04 /* Tutor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutor.xcassets; sourceTree = "<group>"; };
 		12447FCC260744E800BADB04 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		12447FE526077C0A00BADB04 /* UsersRaiting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRaiting.swift; sourceTree = "<group>"; };
 		129389E726062FFF00EA3FF3 /* ARScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARScreen.xib; sourceTree = "<group>"; };
 		129389F12606310C00EA3FF3 /* DetailScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DetailScene.sks; sourceTree = "<group>"; };
 		129389F62606312400EA3FF3 /* ARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
@@ -210,8 +210,8 @@
 		12447FBE26073F4300BADB04 /* UsersRaiting */ = {
 			isa = PBXGroup;
 			children = (
+				12447FE526077C0A00BADB04 /* UsersRaiting.swift */,
 				12447FCC260744E800BADB04 /* Tutor.swift */,
-				12447FBF26073F6400BADB04 /* UsersRaiting.swift */,
 			);
 			path = UsersRaiting;
 			sourceTree = "<group>";
@@ -708,8 +708,8 @@
 				5356E1B22606667100BEF58C /* BookViewController.swift in Sources */,
 				129389F82606312400EA3FF3 /* ARView.swift in Sources */,
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
+				12447FE626077C0A00BADB04 /* UsersRaiting.swift in Sources */,
 				12447FCD260744E800BADB04 /* Tutor.swift in Sources */,
-				12447FC026073F6400BADB04 /* UsersRaiting.swift in Sources */,
 				539E5A5E260701D500431663 /* UserProfileCoordinatorProtocol.swift in Sources */,
 				53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */,
 				53668F0026061474002C9B5E /* LoaderIndicator.swift in Sources */,
