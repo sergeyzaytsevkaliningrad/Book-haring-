@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12447FC026073F6400BADB04 /* UsersRaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12447FBF26073F6400BADB04 /* UsersRaiting.swift */; };
+		12447FC82607449300BADB04 /* Tutor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12447FC72607449300BADB04 /* Tutor.xcassets */; };
+		12447FCD260744E800BADB04 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12447FCC260744E800BADB04 /* Tutor.swift */; };
 		129389E826062FFF00EA3FF3 /* ARScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129389E726062FFF00EA3FF3 /* ARScreen.xib */; };
 		129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 129389F12606310C00EA3FF3 /* DetailScene.sks */; };
 		129389F82606312400EA3FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F62606312400EA3FF3 /* ViewController.swift */; };
@@ -90,6 +93,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12447FBF26073F6400BADB04 /* UsersRaiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersRaiting.swift; path = ../../../../../UsersRaiting.swift; sourceTree = "<group>"; };
+		12447FC72607449300BADB04 /* Tutor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tutor.xcassets; sourceTree = "<group>"; };
+		12447FCC260744E800BADB04 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		129389E726062FFF00EA3FF3 /* ARScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARScreen.xib; sourceTree = "<group>"; };
 		129389F12606310C00EA3FF3 /* DetailScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DetailScene.sks; sourceTree = "<group>"; };
 		129389F62606312400EA3FF3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +211,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		12447FBE26073F4300BADB04 /* UsersRaiting */ = {
+			isa = PBXGroup;
+			children = (
+				12447FCC260744E800BADB04 /* Tutor.swift */,
+				12447FBF26073F6400BADB04 /* UsersRaiting.swift */,
+			);
+			path = UsersRaiting;
+			sourceTree = "<group>";
+		};
 		129389ED2606301400EA3FF3 /* ScreensXib */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +273,7 @@
 				53668EF8260613CD002C9B5E /* Presentation Layer */,
 				53668E8C26060740002C9B5E /* AppDelegate.swift */,
 				53668E8E26060740002C9B5E /* SceneDelegate.swift */,
+				12447FC72607449300BADB04 /* Tutor.xcassets */,
 				53668E9526060744002C9B5E /* Assets.xcassets */,
 				12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */,
 				129389F12606310C00EA3FF3 /* DetailScene.sks */,
@@ -313,6 +329,7 @@
 		53668EF8260613CD002C9B5E /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				12447FBE26073F4300BADB04 /* UsersRaiting */,
 				539E5A4C2607018000431663 /* UserProfile */,
 				5356E1B02606665E00BEF58C /* Book */,
 				5399934A26065A3F00DD5D29 /* IsbnScanner */,
@@ -537,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */,
+				12447FC82607449300BADB04 /* Tutor.xcassets in Resources */,
 				12938A06260631B500EA3FF3 /* Profile.xib in Resources */,
 				129389E826062FFF00EA3FF3 /* ARScreen.xib in Resources */,
 				12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */,
@@ -697,6 +715,8 @@
 				5356E1B22606667100BEF58C /* BookViewController.swift in Sources */,
 				129389F82606312400EA3FF3 /* ViewController.swift in Sources */,
 				53668F4B260619EA002C9B5E /* BorderButton.swift in Sources */,
+				12447FCD260744E800BADB04 /* Tutor.swift in Sources */,
+				12447FC026073F6400BADB04 /* UsersRaiting.swift in Sources */,
 				539E5A5E260701D500431663 /* UserProfileCoordinatorProtocol.swift in Sources */,
 				53E74FF52606392E00F76D03 /* UserFlowCoordinator.swift in Sources */,
 				53668F0026061474002C9B5E /* LoaderIndicator.swift in Sources */,
@@ -879,13 +899,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QJTX6ZW7M3;
+				DEVELOPMENT_TEAM = 3S3TW83623;
 				INFOPLIST_FILE = BookHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = YoavNemirovskiy.BookHack;
+				PRODUCT_BUNDLE_IDENTIFIER = SergeyZaytsev.BookHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -899,13 +919,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QJTX6ZW7M3;
+				DEVELOPMENT_TEAM = 3S3TW83623;
 				INFOPLIST_FILE = BookHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = YoavNemirovskiy.BookHack;
+				PRODUCT_BUNDLE_IDENTIFIER = SergeyZaytsev.BookHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
