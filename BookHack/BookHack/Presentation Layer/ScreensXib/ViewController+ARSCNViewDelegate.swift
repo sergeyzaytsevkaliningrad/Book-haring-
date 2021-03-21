@@ -1,8 +1,10 @@
 //
 //  ViewController+ARSCNViewDelegate.swift
+//
+//  UsersRaiting.swift
 //  BookHack
 //
-//  Created by Сергей Зайцев on 20.03.2021.
+//  Created by Сергей Зайцев on 21.03.2021.
 //
 
 
@@ -10,7 +12,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-extension ViewController: ARSCNViewDelegate {
+extension ARViewCortoller: ARSCNViewDelegate {
     
     // MARK: - ARSCNViewDelegate
     
@@ -44,6 +46,9 @@ extension ViewController: ARSCNViewDelegate {
                 
                 // Animate the WebView to the right
                 self.displayWebView(on: mainNode, xOffset: physicalWidth)
+                
+                // Animate the WebView down
+                self.displayDownWebView(on: mainNode, xOffset: physicalWidth)
                 
             })
         }
@@ -130,6 +135,37 @@ extension ViewController: ARSCNViewDelegate {
             block()
         }
     }
+    func displayDownWebView(on rootNode: SCNNode, xOffset: CGFloat) {
+        // Xcode yells at us about the deprecation of UIWebView in iOS 12.0, but there is currently
+        // a bug that does now allow us to use a WKWebView as a texture for our webViewNode
+        // Note that UIWebViews should only be instantiated on the main thread!
+        DispatchQueue.main.async {
+            let request = URLRequest(url: URL(string: "https://www.youtube.com/watch?v=4KkbIJsHaLE")!)
+            let webDownView = UIWebView(frame: CGRect(x: 0, y: 0, width: 400, height: 672))
+            webDownView.loadRequest(request)
+                        
+            let webDownViewPlane = SCNPlane(width: xOffset, height: xOffset * 1.4)
+            webDownViewPlane.cornerRadius = 0.25
+            
+            let webDownViewNode = SCNNode(geometry: webDownViewPlane)
+            webDownViewNode.geometry?.firstMaterial?.diffuse.contents = webDownView
+            
+            webDownViewNode.geometry?.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(-1, -1, -1), 1, 1, 1)
+            
+            webDownViewNode.position.z -= -0.8
+            webDownViewNode.opacity = 0
+            
+            rootNode.addChildNode(webDownViewNode)
+            webDownViewNode.runAction(.sequence([
+                .wait(duration: 5.0),
+                .fadeOpacity(to: 1.0, duration: 1.5),
+                .moveBy(x: 0, y:  xOffset * -1.1, z: -0.05, duration: 1.5),
+                .moveBy(x: 0, y: -1, z: -0.5, duration: 0.2)
+                ])
+            )
+        }
+    }
+    
     
     var imageHighlightAction: SCNAction {
         return .sequence([

@@ -1,10 +1,12 @@
 //
 //  Tutor.swift
-//  Tutors
 //
-//  Created by Sai Kambampati on 6/5/19.
-//  Copyright © 2019 AppCoda. All rights reserved.
+//  UsersRaiting.swift
+//  BookHack
 //
+//  Created by Сергей Зайцев on 21.03.2021.
+//
+
 
 import SwiftUI
 

@@ -14,18 +14,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8x-iu-xAy">
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fr-g1-UwJ">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </sceneKitView>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </arscnView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="s8x-iu-xAy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0yL-fj-KcD"/>
-                <constraint firstAttribute="bottom" secondItem="s8x-iu-xAy" secondAttribute="bottom" id="2Gj-x5-0gm"/>
-                <constraint firstAttribute="trailing" secondItem="s8x-iu-xAy" secondAttribute="trailing" id="TYe-R9-Wq2"/>
-                <constraint firstItem="s8x-iu-xAy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UBU-vg-mnA"/>
-            </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="84.375"/>
         </view>
     </objects>

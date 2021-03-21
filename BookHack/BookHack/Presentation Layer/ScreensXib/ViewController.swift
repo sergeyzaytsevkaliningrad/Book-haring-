@@ -1,14 +1,17 @@
 //
 //  ViewController.swift
+//
+//  UsersRaiting.swift
 //  BookHack
 //
-//  Created by Сергей Зайцев on 20.03.2021.
+//  Created by Сергей Зайцев on 21.03.2021.
 //
+
 
 import UIKit
 import ARKit
 
-class ViewController: UIViewController {
+class ARViewCortoller: UIViewController {
     
     /// Primary SceneKit view that renders the AR session
     @IBOutlet var sceneView: ARSCNView!

@@ -14,8 +14,6 @@
 		129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 129389F12606310C00EA3FF3 /* DetailScene.sks */; };
 		129389F82606312400EA3FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F62606312400EA3FF3 /* ViewController.swift */; };
 		129389F92606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */; };
-		12938A06260631B500EA3FF3 /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12938A05260631B500EA3FF3 /* Profile.xib */; };
-		12938A1126063C8400EA3FF3 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12938A1026063C8400EA3FF3 /* ProfileController.swift */; };
 		12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */; };
 		5356E1B22606667100BEF58C /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356E1B12606667100BEF58C /* BookViewController.swift */; };
 		5356E1B72606667D00BEF58C /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5356E1B62606667D00BEF58C /* BookViewModel.swift */; };
@@ -100,8 +98,6 @@
 		129389F12606310C00EA3FF3 /* DetailScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DetailScene.sks; sourceTree = "<group>"; };
 		129389F62606312400EA3FF3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
-		12938A05260631B500EA3FF3 /* Profile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
-		12938A1026063C8400EA3FF3 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		12938A20260648C300EA3FF3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC02CC6F20EF2E7B2C52943 /* Pods_BookHackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookHackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBBF398D82F130AA11857D5 /* Pods-BookHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookHack.debug.xcconfig"; path = "Target Support Files/Pods-BookHack/Pods-BookHack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,8 +222,6 @@
 				129389F62606312400EA3FF3 /* ViewController.swift */,
 				129389F72606312400EA3FF3 /* ViewController+ARSCNViewDelegate.swift */,
 				129389E726062FFF00EA3FF3 /* ARScreen.xib */,
-				12938A05260631B500EA3FF3 /* Profile.xib */,
-				12938A1026063C8400EA3FF3 /* ProfileController.swift */,
 			);
 			path = ScreensXib;
 			sourceTree = "<group>";
@@ -555,7 +549,6 @@
 			files = (
 				129389F22606310C00EA3FF3 /* DetailScene.sks in Resources */,
 				12447FC82607449300BADB04 /* Tutor.xcassets in Resources */,
-				12938A06260631B500EA3FF3 /* Profile.xib in Resources */,
 				129389E826062FFF00EA3FF3 /* ARScreen.xib in Resources */,
 				12938A21260648C300EA3FF3 /* LaunchScreen.storyboard in Resources */,
 				53668EC02606087F002C9B5E /* GoogleService-Info.plist in Resources */,
@@ -740,7 +733,6 @@
 				53668F0C26061776002C9B5E /* AuthService.swift in Sources */,
 				53668F1926061811002C9B5E /* EnterNameDelegate.swift in Sources */,
 				53668F272606181E002C9B5E /* WelcomeViewController.swift in Sources */,
-				12938A1126063C8400EA3FF3 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
