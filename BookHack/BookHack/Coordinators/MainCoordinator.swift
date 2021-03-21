@@ -41,6 +41,7 @@ final class MainCoordinator: Coordinator {
         if authService.isUserExist() {
             DispatchQueue.main.async {
                 self.startUserFlow()
+                try? self.authService.signOutUser()
             }
         } else {
             DispatchQueue.main.async {

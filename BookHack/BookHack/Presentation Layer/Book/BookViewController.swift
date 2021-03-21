@@ -15,7 +15,8 @@ class BookViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = viewModel.title
         label.textColor = AppColors.label
-        label.numberOfLines = 2
+        label.font = UIFont.systemFont(ofSize: 25, weight: .medium)
+        label.numberOfLines = 0
         label.textAlignment = .left
         return label
     }()
@@ -24,7 +25,8 @@ class BookViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = viewModel.subtitle
         label.textColor = AppColors.label
-        label.numberOfLines = 2
+        label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+        label.numberOfLines = 0
         label.textAlignment = .left
         return label
     }()
@@ -33,6 +35,7 @@ class BookViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = "Автор: \(viewModel.author)"
         label.textColor = AppColors.label
+        label.font = UIFont.systemFont(ofSize: 25, weight: .medium)
         label.numberOfLines = 2
         label.textAlignment = .left
         return label
@@ -57,7 +60,6 @@ class BookViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let containerView = UIStackView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,28 +68,19 @@ class BookViewController: UIViewController {
     }
     
     private func setupLayout() {
-        setupContainerView()
-        [containerView].forEach {
+        [titleLabel, subtitleLabel].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(containerView)
+            view.addSubview($0)
         }
-        
         NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 20),
-            containerView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
-            containerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.7)
+            titleLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+            
+            subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
+            subtitleLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            subtitleLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor)
         ])
     }
-    
-    func setupContainerView() {
-        containerView.axis = .vertical
-        containerView.distribution = .equalCentering
-        containerView.alignment = .leading
-        containerView.addArrangedSubview(titleLabel)
-        containerView.addArrangedSubview(subtitleLabel)
-//        containerView.addArrangedSubview(authorLabel)
-//        containerView.addArrangedSubview(descriptionLabel)
-        containerView.spacing = 6
-    }
+
 }
